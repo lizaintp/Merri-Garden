@@ -1,0 +1,204 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status"><div class="preloader-position loader"> <span></span> </div></div>
+    </div>
+    <!-- Content -->
+    <div id="pwe-page"> 
+       <a href="#" class="js-pwe-nav-toggle pwe-nav-toggle"><i></i></a>
+        <!-- Sidebar Section -->
+        <aside id="pwe-aside">
+            <!-- Logo -->
+            <h1 id="pwe-logo">
+                <a href="index.html">PWE<i>®</i><span>weddings <small>&#8226;</small> events</span></a>
+            </h1>
+            <!-- Menu -->
+            {% include 'include/header.html' %}
+        </aside>
+        <!-- Main Section -->
+        <div id="pwe-main">
+            <!-- Banner Title -->
+            <div class="banner-container">
+                <div class="banner-img"> <img class="banner-img-width" src="images/topbanner-1.jpeg" alt=""> </div>
+                <div class="banner-head">
+                    <div class="banner-head-padding banner-head-margin">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12"> <span class="heading-meta">weddings . events</span>
+                                    <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Our Services</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="services-section services pt-0 pb-90">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/1.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. weddings</a>
+                                    </span>
+                                    <h5><a href="services-page.html">WEDDING PLANNER</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/2.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. weddings</a>
+                                    </span>
+                                    <h5><a href="services-page.html">MASTER OF CEREMONIES</a></h5> <a href="#"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/3.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. weddings</a>
+                                    </span>
+                                    <h5><a href="services-page.html">DESTINATION WEDDING</a></h5> <a href="#"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/4.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. events</a>
+                                    </span>
+                                    <h5><a href="services-page.html">SPECIAL EVENTS</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/5.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. events</a>
+                                    </span>
+                                    <h5><a href="services-page.html">BIRTHDAY PARTY PLANNER</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="item mb-30">
+                                <div class="position-re o-hidden"> <img src="images/services/6.jpg" alt=""> </div>
+                                <div class="con"> <span class="category">
+                                        <a href="services-page.html">. events</a>
+                                    </span>
+                                    <h5><a href="services-page.html">CORPORATE EVENTS</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing -->
+            <div class="price-section pt-60 pb-60 price bg-pink">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta">wedding</span>
+                            <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Planning Packages</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="cont">
+                                    <div class="type">
+                                        <h6>Ceremony</h6>
+                                    </div>
+                                    <div class="value">
+                                        <h4>2500<span>$</span></h4>
+                                        <p>Starting From</p>
+                                    </div>
+                                    <div class="feat">
+                                        <ul>
+                                            <li>Decoration</li>
+                                            <li>DJ & Sound</li>
+                                            <li><del>Photographer</del></li>
+                                            <li>Celebrant</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-contact"> <a href="#"><span>See more</span></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="cont">
+                                    <div class="type">
+                                        <h6>Party</h6>
+                                    </div>
+                                    <div class="value">
+                                        <h4>3500<span>$</span></h4>
+                                        <p>Starting From</p>
+                                    </div>
+                                    <div class="feat">
+                                        <ul>
+                                            <li>Decoration</li>
+                                            <li>DJ & Sound</li>
+                                            <li>Photographer</li>
+                                            <li>Party Planner</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-contact"> <a href="#"><span>See more</span></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="cont">
+                                    <div class="type">
+                                        <h6>Full Wedding</h6>
+                                    </div>
+                                    <div class="value">
+                                        <h4>6500<span>$</span></h4>
+                                        <p>Starting From</p>
+                                    </div>
+                                    <div class="feat">
+                                        <ul>
+                                            <li>Decoration</li>
+                                            <li>DJ & Sound</li>
+                                            <li>Photographer</li>
+                                            <li>Make-Up & Hair Dresser</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-contact"><a href="#"><span>See More</span></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="cont">
+                                    <div class="type">
+                                        <h6>Pre - Wedding</h6>
+                                    </div>
+                                    <div class="value">
+                                        <h4>5500<span>$</span></h4>
+                                        <p>Starting From</p>
+                                    </div>
+                                    <div class="feat">
+                                        <ul>
+                                            <li>Decoration</li>
+                                            <li>DJ & Sound</li>
+                                            <li>Photographer</li>
+                                            <li>Venue Booking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-contact"><a href="#"><span>See More</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            {% include 'include/footer.html' %}
+        </div>
+    </div>
+    <!-- jQuery -->
+{% endblock %}
