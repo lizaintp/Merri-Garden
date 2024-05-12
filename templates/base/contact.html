@@ -13,24 +13,22 @@
         <aside id="pwe-aside">
             <!-- Logo -->
             <h1 id="pwe-logo">
-                <a href="index.html">PWE<i>®</i><span>weddings <small>&#8226;</small> events</span></a>
+                <a href="{% url 'index' %}">Merri Garden<i>®</i><span>cozy <small>&#8226;</small> garden</span></a>
             </h1>
             <!-- Menu -->
-            
-            <!-- Sidebar Footer -->
             {% include 'include/header.html' %}
         </aside>
         <!-- Main Section -->
         <div id="pwe-main">
             <!-- Banner Title -->
             <div class="banner-container">
-                <div class="banner-img"> <img class="banner-img-width" src="images/topbanner-1.jpeg" alt=""> </div>
+                <div class="banner-img"> <img class="banner-img-width" src="{% static 'images/topbanner-1.jpeg' %}" alt=""> </div>
                 <div class="banner-head">
                     <div class="banner-head-padding banner-head-margin">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-12"> <span class="heading-meta">location</span>
-                                    <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Contact Us</h2>
+                                <div class="col-md-12"> <span class="heading-meta">местоположение</span>
+                                    <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Наши Контакты</h2>
                                 </div>
                             </div>
                         </div>
@@ -74,30 +72,30 @@
                         <div class="col-md-6 offset-md-1">
                             <div class="row">
                                 <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                    <p>We would like to hear from you</p>
+                                    <p>Мы хотели бы услышать ваше мнение</p>
                                     <form method="post" class="contact__form" action="mail.php">
                                         <!-- Form message -->
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div>
+                                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> Ваше сообщение было успешно отправлено. </div>
                                             </div>
                                         </div>
                                         <!-- Form elements -->
                                         <div class="row">
                                             <div class="col-md-6 form-group">
-                                                <input name="name" type="text" placeholder="Name *" required>
+                                                <input name="имя" type="text" placeholder="Имя *" required>
                                             </div>
                                             <div class="col-md-6 form-group">
-                                                <input name="email" type="email" placeholder="Email *" required>
+                                                <input name="почта" type="email" placeholder="Почта *" required>
                                             </div>
                                             <div class="col-md-12 form-group">
-                                                <input name="subject" type="text" placeholder="Subject *" required>
+                                                <input name="тема" type="text" placeholder="Тема *" required>
                                             </div>
                                             <div class="col-md-12 form-group">
-                                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required></textarea>
+                                                <textarea name="сообщение" id="message" cols="30" rows="4" placeholder="Сообщение *" required></textarea>
                                             </div>
                                             <div class="col-md-12">
-                                                <input name="submit" type="submit" value="Say Hello!">
+                                                <input name="submit" type="submit" value="Скажи Привет!">
                                             </div>
                                         </div>
                                     </form>
@@ -116,32 +114,7 @@
                 </div>
             </div>
             <!-- Clients -->
-            <div class="clients-section clients">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 owl-carousel owl-theme">
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/1.jpg" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/2.jpg" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/3.jpg" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/4.jpg" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/5.jpg" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="images/clients/6.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- Footer -->
             {% include 'include/footer.html' %}
         </div>

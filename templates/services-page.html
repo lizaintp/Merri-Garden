@@ -13,7 +13,7 @@
         <aside id="pwe-aside">
             <!-- Logo -->
             <h1 id="pwe-logo">
-                <a href="index.html">PWE<i>®</i><span>weddings <small>&#8226;</small> events</span></a>
+                <a href="{% url 'index' %}">Merri Garden<i>®</i><span>cozy <small>&#8226;</small> garden</span></a>
             </h1>
             <!-- Menu -->
             {% include 'include/header.html' %}
@@ -22,7 +22,7 @@
         <div id="pwe-main">
             <!-- Banner Title -->
             <div class="banner-container">
-                <div class="banner-img"> <img class="banner-img-width" src="images/topbanner.jpeg" alt=""> </div>
+                <div class="banner-img"> <img class="banner-img-width" src="{% static 'images/topbanner.jpeg' %}" alt=""> </div>
                 <div class="banner-head">
                     <div class="banner-head-padding banner-head-margin">
                         <div class="container-fluid">
@@ -39,7 +39,7 @@
             <div class="about-section pt-0 pb-60">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-5 animate-box" data-animate-effect="fadeInLeft"> <img src="images/services/7.jpg" class="img-fluid mb-30" alt=""> </div>
+                        <div class="col-md-5 animate-box" data-animate-effect="fadeInLeft"> <img src="{% static 'images/services/7'.jpg %}'" class="img-fluid mb-30" alt=""> </div>
                         <div class="col-md-7 animate-box" data-animate-effect="fadeInLeft">
                             <p>Qurabit aliquet orci elit gene tristique lorem commodo vitae. Aliquam tince felis the gravida aliquam, neque libero hendrerit magna, sit amet mollis lacus quam maurisine. Aliquam erat the druna volutpat.</p>
                             <p>Lhasellus viverra tristique justo. Duis vitae diam neque. Vivamus ac est augue. Vestibule fringilla dui at elit finibus viverra nec a lacus. Sedat themo eros odio semper sollicitudin mi suscipit non. Suspendisse sagie fermentum quamen.</p>

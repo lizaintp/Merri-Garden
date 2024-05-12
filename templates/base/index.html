@@ -16,9 +16,9 @@
                 <a href="index.html">Merri Garden<i>®</i><span>cozy <small>&#8226;</small> garden</span></a>
             </h1>
             <!-- Menu -->
-            {% include 'include/header.html' %}
-            <!-- Sidebar Footer -->
             
+            <!-- Sidebar Footer -->
+            {% include 'include/header.html' %}
         </aside>
         <!-- Main Section -->
         <div id="pwe-main">
@@ -36,14 +36,13 @@
                                                 <h6>dream wedding</h6>
                                                 <h1>To Know Us is to Love Us!</h1>
                                                 <p>We would love to meet up and chat about how we can make YOUR DREAM wedding happen!</p>
-                                                <div class="btn-contact"><a href="https://1.envato.market/9X1Ry" target="_blank"><span>Buy Now</span></a></div>
-                                            </div>
+                                               
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/slider/02.jpg' %});">
+                        <li style="background-image: url({% static 'images/slider/02.jpg' %});">
                             <div class="overlay"></div>
                             <div class="container-fluid">
                                 <div class="row">
@@ -52,15 +51,14 @@
                                             <div class="desc">
                                                 <h6>dream maker</h6>
                                                 <h1>Your Personal Dream Maker</h1>
-                                                <p>We believe that it is all about the BIG DREAMS and the small details!</p>
-                                                <div class="btn-contact"><a href="https://1.envato.market/9X1Ry" target="_blank"><span>Buy Now</span></a></div>
-                                            </div>
+                                                <p>Мы верим, что главное - это КРАСОТА и ВАШ КОМФОРТ!</p>
+                                                
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/slider/03.jpg' %});">
+                        <li style="background-image: url({% static 'images/slider/03.jpg' %});">
                             <div class="overlay"></div>
                             <div class="container-fluid">
                                 <div class="row">
@@ -70,8 +68,7 @@
                                                 <h6>planing dream</h6>
                                                 <h1>Destination Wedding Planner</h1>
                                                 <p>No matter your dreams - we can assist you in planning your PWE WEDDINGS & EVENTS.</p>
-                                                <div class="btn-contact"><a href="https://1.envato.market/9X1Ry" target="_blank"><span>Buy Now</span></a></div>
-                                            </div>
+                                                
                                         </div>
                                     </div>
                                 </div>
@@ -253,32 +250,7 @@
                 </div>
             </div>
             <!-- Clients -->
-            <div class="clients-section clients">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 owl-carousel owl-theme">
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/1.jpg' %}" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/2.jpg' %}" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/3.jpg' %}" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/4.jpg' %}" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/5.jpg' %}" alt=""></a>
-                            </div>
-                            <div class="client-logo">
-                                <a href="#"><img src="{% static 'images/clients/6.jpg' %}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- Footer -->
             {% include 'include/footer.html' %}
         </div>

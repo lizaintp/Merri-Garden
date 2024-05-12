@@ -13,7 +13,7 @@
         <aside id="pwe-aside">
             <!-- Logo -->
             <h1 id="pwe-logo">
-                <a href="index.html">PWE<i>®</i><span>weddings <small>&#8226;</small> events</span></a>
+                <a href="{% url 'index' %}">Merri Garden<i>®</i><span>cozy <small>&#8226;</small> garden</span></a>
             </h1>
             <!-- Menu -->
             {% include 'include/header.html' %}
@@ -22,7 +22,7 @@
         <div id="pwe-main">
             <!-- Banner Title -->
             <div class="banner-container">
-                <div class="banner-img"> <img class="banner-img-width" src="images/topbanner-1.jpeg" alt=""> </div>
+                <div class="banner-img"> <img class="banner-img-width" src="{% static 'images/topbanner-1.jpeg" alt=""> </div>
                 <div class="banner-head">
                     <div class="banner-head-padding banner-head-margin">
                         <div class="container-fluid">
@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/1.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/1.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. weddings</a>
                                     </span>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/2.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/2.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. weddings</a>
                                     </span>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/3.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/3.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. weddings</a>
                                     </span>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/4.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/4.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. events</a>
                                     </span>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/5.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/5.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. events</a>
                                     </span>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
                             <div class="item mb-30">
-                                <div class="position-re o-hidden"> <img src="images/services/6.jpg" alt=""> </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'images/services/6.jpg' %}" alt=""> </div>
                                 <div class="con"> <span class="category">
                                         <a href="services-page.html">. events</a>
                                     </span>
