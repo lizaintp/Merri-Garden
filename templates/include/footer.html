@@ -1,26 +1,62 @@
 {% load static %}
-<div id="pwe-footer2">
-    <div class="pwe-narrow-content">
-        <div class="row">
-            <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                <h2>
-                    <a href="index.html">Merri Garden<i>®</i><span>cozy <small>•</small> garden</span></a>
-                </h2>
-                <div class="social"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i class="ti-twitter-alt"></i></a> <a href="#"><i class="ti-instagram"></i></a> <a href="#"><i class="ti-pinterest"></i></a> </div>
-            </div>
-            <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                <h6>Ring</h6>
-                <p>{{settings.phone}}</p>
-                <h6>Write</h6>
-                <p>{{settings.email}}</p>
-            </div>
-            <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                <h6>Address</h6>
-                <p>Wallaway 5st St Normain
-                    <br />New York, USA. 98499
-                </p>
-                <p class="copyright">&copy; 2024. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-lg-4">
+				<img src="images/logo.png" alt="">
+				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiaproi-dent, sunt in culpa qui officia dese deserunt...</p>
+				
+			</div>
+			<!-- col-md-4 -->
+			<div class="col-md-2 col-sm-6 col-lg-2">
+				<h4>Quick Links</h4>
+				<ul class="footer-link">
+					<li class="nav-item"><a href="" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Classes</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Teachers</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Latest News</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Countact Us</a></li>
+				</ul>
+			</div>
+			<!-- col-md-4 -->
+			<div class="col-md-2 col-sm-6 col-lg-2">
+				<h4>Categories</h4>
+				<ul class="footer-link">
+					<li class="nav-item"><a href="" class="nav-link">Painting</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Drawing</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Sports, Games</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Life Science</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Activities & Events</a></li>
+				</ul>
+			</div>
+			<!-- col-md-4 -->
+			<div class="col-md-4 col-sm-6 col-lg-4">
+				<h4>Photo gallery</h4>
+				<div class="footer-gellary-area">
+					<ul class="footer-gellary">
+						<li><a href=""><img src="{% static 'images/g-01.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/g-02.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/g-03.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/g-04.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/slider-01.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/slider-02.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/slider-03.png' %}" alt=""></a></li>
+						<li><a href=""><img src="{% static 'images/post-03.jpg' %}" alt=""></a></li>
+					</ul>
+					<div class="footer-social">
+						<ul>
+							<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>      
+			</div>
+			<!-- col-md-4 -->
+		</div>
+	</div>
+	<div class="footer-shape-one"><img src="{% static 'images/shape-11.png' %}" alt=""></div>
+	<div class="footer-shape-two"><img src="{% static 'images/shape-11.png' %}" alt=""></div>
+	<div class="footer-shape-three"><img src="{% static 'images/dragon.png' %}" alt=""></div>
+</footer>

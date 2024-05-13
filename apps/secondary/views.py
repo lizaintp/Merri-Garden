@@ -1,20 +1,20 @@
 from django.shortcuts import render
 
 # Create your views here.
-def blog(request):
-    return render(request, 'blog.html', locals())
+def blog_page(request):
+    return render(request, 'blog-page.html', locals())
 
-def portfolio_page(request):
-    return render(request, 'portfolio-page.html', locals())
+def courses(request):
+    return render(request, 'courses.html', locals())
 
-def portfolio(request):
-    return render(request, 'portfolio.html', locals())
+def single_blog(request):
+    return render(request, 'single-blog.html', locals())
 
-def post(request):
-    return render(request, 'post.html', locals())
+def single_course(request):
+    return render(request, 'single-course.html', locals())
 
-def services_page(request):
-    return render(request, 'services-page.html', locals())
+def teacher_profile(request):
+    return render(request, 'teacher-profile.html', locals())
 
-def services(request):
-    return render(request, 'services.html', locals())
+def teacher(request):
+    return render(request, 'teacher.html', locals())

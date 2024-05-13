@@ -1,258 +1,831 @@
 {% extends 'include/homepage.html' %}
 {% load static %}
 {% block content %}
-    <!-- Preloader -->
-    <div class="preloader-bg"></div>
-    <div id="preloader">
-        <div id="preloader-status"><div class="preloader-position loader"> <span></span> </div></div>
-    </div>
-    <!-- Content -->
-    <div id="pwe-page"> 
-       <a href="#" class="js-pwe-nav-toggle pwe-nav-toggle"><i></i></a>
-        <!-- Sidebar Section -->
-        <aside id="pwe-aside">
-            <!-- Logo -->
-            <h1 id="pwe-logo">
-                <a href="index.html">Merri Garden<i>®</i><span>cozy <small>&#8226;</small> garden</span></a>
-            </h1>
-            <!-- Menu -->
-            
-            <!-- Sidebar Footer -->
-            {% include 'include/header.html' %}
-        </aside>
-        <!-- Main Section -->
-        <div id="pwe-main">
-            <!-- Slider -->
-            <aside id="pwe-hero" class="js-fullheight">
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li style="background-image: url({% static 'images/slider/01.jpg' %});">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-                                            <div class="desc">
-                                                <h6>dream wedding</h6>
-                                                <h1>To Know Us is to Love Us!</h1>
-                                                <p>We would love to meet up and chat about how we can make YOUR DREAM wedding happen!</p>
-                                               
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url({% static 'images/slider/02.jpg' %});">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-                                            <div class="desc">
-                                                <h6>dream maker</h6>
-                                                <h1>Your Personal Dream Maker</h1>
-                                                <p>Мы верим, что главное - это КРАСОТА и ВАШ КОМФОРТ!</p>
-                                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url({% static 'images/slider/03.jpg' %});">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-                                            <div class="desc">
-                                                <h6>planing dream</h6>
-                                                <h1>Destination Wedding Planner</h1>
-                                                <p>No matter your dreams - we can assist you in planning your PWE WEDDINGS & EVENTS.</p>
-                                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-            <!-- Services -->
-            <div class="services-section services clear pt-90 pb-90">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 mb-30"> <span class="heading-meta">weddings . events</span>
-                            <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Our Services</h2>
-                        </div>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- =======================
+    end Preloader
+======================== -->
+<body class="homepage-two">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="header-top-info">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> Street name 123 - New York</li>
+                            <li><i class="fa-solid fa-envelope"></i> mail@yourdomain.com </li>
+                            <li><i class="fa-solid fa-phone"></i> (123) 456-789</li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/1.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. weddings</a>
-                                        </span>
-                                        <h5><a href="services-page.html">WEDDING PLANNER</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/2.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. weddings</a>
-                                        </span>
-                                        <h5><a href="services-page.html">MASTER OF CEREMONIES</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/4.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. events</a>
-                                        </span>
-                                        <h5><a href="services-page.html">SPECIAL EVENTS</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/3.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. weddings</a>
-                                        </span>
-                                        <h5><a href="services-page.html">DESTINATION WEDDING</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/5.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. events</a>
-                                        </span>
-                                        <h5><a href="services-page.html">BIRTHDAY PARTY PLANNER</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="position-re o-hidden"> <img src="{% static 'images/services/6.jpg' %}" alt=""> </div>
-                                    <div class="con"> <span class="category">
-                                            <a href="services-page.html">. events</a>
-                                        </span>
-                                        <h5><a href="services-page.html">CORPORATE EVENTS</a></h5> <a href="services-page.html"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="header-top-social footer-social">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Testiominals -->
-            <div class="testiominal-section pt-90 pb-90 testimonials bg-img bg-fixed" data-overlay-dark="5" data-background="{% static 'images/banner.jpg' %}">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="section-head"> 
-                                <span>testiominals</span>
-                                <h4>From our clients</h4>
-                                <p>We are always eager to hear your opinion and share your experience. Here you can find some of our affectionate customers opinions.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item-box"> <span class="quote">
-                                        <img src="{% static 'images/quot.png' %}" alt="">
-                                    </span>
-                                    <p>I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="{% static 'images/team/05.jpg' %}" alt=""> </div>
-                                        <div class="cont">
-                                            <h6>Fredia & Pablo</h6> <span>April 15, 2024 USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-box"> <span class="quote">
-                                        <img src="{% static 'images/quot.png' %}" alt="">
-                                    </span>
-                                    <p>I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="{% static 'images/team/06.jpg' %}" alt=""> </div>
-                                        <div class="cont">
-                                            <h6>Olivia & Enrico</h6> <span>April 13, 2024 CA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-box"> <span class="quote">
-                                        <img src="{% static 'images/quot.png' %}" alt="">
-                                    </span>
-                                    <p>I had no idea about all the things I had to do to get married / things I needed to think about. Rachel explained everything to me and guided me through the whole process with enthusiasm and patience. She was wonderful to work with! I couldn’t have been happier with her services and upbeat personality!</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="{% static 'images/team/07.jpg' %}" alt=""> </div>
-                                        <div class="cont">
-                                            <h6>Tammy & Matthew</h6> <span>April 11, 2024 USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog -->
-            <div class="blog-section blog pt-90 pb-90">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 mb-30"> <span class="heading-meta">read news</span>
-                            <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Latest News</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="item mb-30 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="post-img"> <img src="{% static 'images/blog/2.jpg' %}" alt="">
-                                    <div class="date">
-                                        <a href="post.html"> <span>Apr</span> <i>02</i> </a>
-                                    </div>
-                                </div>
-                                <div class="content"> <span class="tag">
-                                        <a href="blog.html">Wedding</a>
-                                    </span>
-                                    <h5><a href="post.html">Crush Your Wedding Day Style!</a></h5>
-                                    <p>Quality fusce suscipit the conce viviense ante a hendrerit ullamcor risus nise the cursus purus sit amet viverra.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item mb-30 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="post-img"> <img src="{% static 'images/blog/3.jpg' %}" alt="">
-                                    <div class="date">
-                                        <a href="post.html"> <span>Apr</span> <i>04</i> </a>
-                                    </div>
-                                </div>
-                                <div class="content"> <span class="tag">
-                                        <a href="post.html">Wedding</a>
-                                    </span>
-                                    <h5><a href="post.html">How to be the best bridesmaid ever!</a></h5>
-                                    <p>Quality fusce suscipit the conce viviense ante a hendrerit ullamcor risus nise the cursus purus sit amet viverra.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item mb-30 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="post-img"> <img src="{% static 'images/blog/1.jpg' %}" alt="">
-                                    <div class="date">
-                                        <a href="post.html"> <span>Apr</span> <i>08</i> </a>
-                                    </div>
-                                </div>
-                                <div class="content"> <span class="tag">
-                                        <a href="blog.html">Hairstyle</a>
-                                    </span>
-                                    <h5><a href="post.html">15 Best Bridal Hairstyles Ever</a></h5>
-                                    <p>Quality fusce suscipit the conce viviense ante a hendrerit ullamcor risus nise the cursus purus sit amet viverra.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Clients -->
-            
-            <!-- Footer -->
-            {% include 'include/footer.html' %}
         </div>
-        <!-- jQuery -->
+    </div>
+    <!-- Header-top -->
+    {% include 'include/header.html' %}
+<!-- ====================================
+        End Header Here
+========================================= -->
+    <div class="container">
+        <div class="homepage-two-bottom">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="homepage-box-single box-one">
+                        <div class="box-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h4>Active Learning</h4>
+                        <p>Compellingly architect timely relationships for customized experiences. Credibly plagiarize emerging.</p>
+                    </div>
+                </div>
+                <!-- col-md -->
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="homepage-box-single box-two">
+                        <div class="box-icon two"><i class="fa-solid fa-user-graduate"></i></div>
+                        <h4>Expert Teachers</h4>
+                        <p>Sed pharetra mauris semper libero tempor consequat. Nam sed lectus nisl. Aenean ullamcorper.</p>
+                    </div>
+                </div>
+                <!-- col-md -->
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="homepage-box-single box-three">
+                        <div class="box-icon three"><i class="fa-solid fa-globe"></i></div>   
+                        <h4>Strategi Location</h4>
+                        <p>Vivamus laoreet sodales lectus id blandit. Aenean ac nibh sit amet quam semper scelerisque eu.</p>
+                    </div>
+                </div>
+                <!-- col-md -->
+            </div>
+        </div>
+    </div>
+<!-- ====================================
+        End Header Bottom Here
+========================================= -->
+<section class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2>About Us</h2>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="about-img">
+					<div class="about-main-img">
+						<img src="images/homepageabout.png" alt=""> 
+					</div>
+					<div class="about-cloud-img-one"> <img src="images/white-cloud.png" alt=""> </div>
+					<div class="about-cloud-img-two"> <img src="images/white-cloud.png" alt=""> </div>
+
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="about-text">
+					<h4>Welcome to Kidko Kindergarten</h4>
+					<p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecena Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna  maximus.  </p>
+					<a class="btn btn-primary kids-active-btn" href="#">Know More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-main-cloud-one"> <img src="images/yellow-cloud.png" alt=""></div>
+	<div class="about-main-cloud-two"> <img src="images/yellow-cloud.png" alt=""></div>
+	<div class="about-main-shape-one"> <img src="images/shape-01.png" alt=""></div>
+	<div class="about-main-shape-two"> <img src="images/shape-02.png" alt=""></div>
+</section>
+<!-- ====================================
+        End About Here
+========================================= -->
+<div class="counter-area home-two">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-4 col-lg-4">
+				<div class="home-two single-counter">
+					<div class="counter-single-area">   
+						<img src="images/counter-01.png" alt="">
+						<span class="counter">4325</span>
+						<p>Total Student</p>
+					</div>
+				</div>
+			</div>
+			<!-- col-md-close -->
+			<div class="col-12 col-md-4 col-lg-4">
+				<div class="home-two single-counter">
+					<div class="counter-single-area">
+						<img src="images/counter-02.png" alt="">
+						<span class="counter">325</span>
+						<p>Class Room</p>
+					</div>
+				</div>
+			</div>
+			<!-- col-md-close -->
+			<div class="col-12 col-md-4 col-lg-4">
+				<div class="home-two single-counter">
+					<div class="counter-single-area">
+						<img src="images/counter-03.png" alt="">
+						<span class="counter">225</span>
+						<p>Total Teacher</p>
+					</div>
+				</div>
+			</div>
+			<!-- col-md-close -->
+		</div>
+	</div>
+	<div class="airplane"><img src="images/airplane.png" alt=""></div>
+</div>
+<!-- ====================================
+        End Counter Area Here
+========================================= -->
+<section class=" pagetwo activities">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2>Our Best Services for Kids</h2>
+					<p>WHAT WE OFFER</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-5 col-lg-5">
+				<div class="service-single-box d-flex justify-content-between">
+					 <img src="images/homepage-service.png" alt="">
+				</div>
+			</div>
+			<!-- col-md-4 -->
+			<div class="col-12 col-md-7 col-lg-7">
+				<div class="row">
+
+					<div class="col-md-6 col-lg-6">
+						<div class="pagetwo service-box">
+							<i class="fa-solid fa-bus"></i>
+							<h4>Bus Service</h4>
+							<p>Collaboratively visualize 24/365 applications and orthogonal human.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="pagetwo service-box">
+							<i class="fa-solid fa-medal"></i>
+							<h4>Sports Training</h4>
+							<p>Sed pharetra mauris semper libero tempor consequat. Nam sed lectus nisl.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="pagetwo service-box">
+							<i class="fa-solid fa-headphones-simple"></i>
+							<h4>Music Trainig</h4>
+							<p> Vivamus laoreet sodales lectus id blandit. Aenean ac nibh sit amet quam.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="pagetwo service-box">
+							<i class="fa-solid fa-book-open"></i>
+							<h4>English Lesson</h4>
+							<p>Quisque lobortis turpis ac libero posuere iaculis. In justo dui, vehicula.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- col-md-8 -->
+		</div>
+	</div>
+</section>
+<!-- ====================================
+        End activities Area Here
+========================================= -->
+<section class="pagetwo our-classes">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="section-title">
+                    <h2>Our Classes</h2>
+                    <p>With kindori, we always put the quality of teaching children first,
+                        when sending children at kindori kindergarten.</p>
+                </div>
+            </div>
+        </div>
+        <div class="classes-top-area">
+            <div class="classes-slider owl-carousel owl-theme">
+                <div class="classes-slider-item">
+                    <div class="slider-img">
+                        <img src="images/pagetwo-01.png" alt="">
+                        <div class="pagetwo-price">$50</div>
+                    </div>
+                    <div class="slider-description">   
+                        <div class="slider-text">
+                            <h4>Letter Match</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur pisicelit sed do eiusmod tempor incidie</p>
+                        </div>
+                        <div class="slider-title d-flex justify-content-between">
+                            <div class="title-left">
+                                <span>Age</span>
+                                <span>2-09</span>
+                            </div>
+                            <div class="title-right">
+                                <span>Size</span>
+                                <span>Class 20-22</span>
+                            </div>
+                        </div>
+                        <div class="slider-btn">
+                            <a class="btn btn-primary kids-active-btn" href="#">Price: $50</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="classes-slider-item">
+                    <div class="slider-img">
+                        <img src="images/pagetwo-02.png" alt="">
+                    </div>
+                    <div class="slider-description">
+                        <div class="slider-text">
+                            <h4>Word Match</h4>
+                            <p>Vivamus tempus arcu id diam feugiat, quis feugiat elit congue. Etiam ornare molestie.</p>
+                        </div>
+                        <div class="slider-title d-flex justify-content-between">
+                            <div class="title-left">
+                                <span>Age</span>
+                                <span>1-05</span>
+                            </div>
+                            <div class="title-right">
+                                <span>Size</span>
+                                <span>Class 18-11</span>
+                            </div>
+                        </div>
+                        <div class="slider-btn">
+                            <a class="btn btn-primary kids-active-btn" href="#">Price: $50</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="classes-slider-item">
+                    <div class="slider-img">
+                        <img src="images/pagetwo-03.png" alt="">
+                    </div>
+                    <div class="slider-description">
+                        <div class="slider-text">
+                            <h4>Math Logic</h4>
+                            <p>Nullam accumsan neque in ante semper commodo. In convallis vestibulum augue</p>
+                        </div>
+                        <div class="slider-title d-flex justify-content-between">
+                            <div class="title-left">
+                                <span>Age</span>
+                                <span>3-10</span>
+                            </div>
+                            <div class="title-right">
+                                <span>Size</span>
+                                <span>Class 21-10</span>
+                            </div>
+                        </div>
+                        <div class="slider-btn">
+                            <a class="btn btn-primary kids-active-btn" href="#">Price: $50</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="classes-slider-item">
+                    <div class="slider-img">
+                        <img src="images/slider-03.png" alt="">
+                    </div>
+                    <div class="slider-description">
+                        <div class="slider-title d-flex justify-content-between">
+                            <div class="title-left">
+                                <span>Age</span>
+                                <span>3-10</span>
+                            </div>
+                            <div class="title-right">
+                                <span>Size</span>
+                                <span>Class 21-10</span>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <h4>Letter Match</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur pisicelit sed do eiusmod tempor incidie</p>
+                        </div>
+                        <div class="slider-btn">
+                            <a class="btn btn-primary kids-active-btn" href="#">Price: $50</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- iteam -->
+            </div>
+            <!-- slider -->
+        </div>
+        <!-- top area -->
+        <div class="classes-cloud-one"><img src="images/yellow-cloud.png" alt=""></div>
+        <div class="classes-cloud-two"><img src="images/yellow-cloud.png" alt=""></div>
+        <div class="classes-cloud-three"><img src="images/yellow-cloud.png" alt=""></div>
+    </div>
+</section>
+<!-- ====================================
+    End Our Classes Area Here
+========================================= -->
+<div class="pagetwo video">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-5">
+                <div class="video-img">
+                    <img src="images/video.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-7">
+                <div class="video-play">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ====================================
+    End Video Area Here
+========================================= -->
+<section class="pagetwo testimonial">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2>Testimonials</h2>
+					<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
+				</div>
+			</div>
+		</div>
+		<div class="pagetoreview  owl-carousel owl-theme">
+			<div class="slider-team">
+				<div class="d-flex">
+					<h5> Dr. Mexual</h5>
+					<ul class="d-flex">
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+					</ul>
+				</div>
+				<p>Morbi ut massa pharetra, rutrum leo ut, porta turpis. Nullam accumsan neque in ante semper commodo tristique nec risu hendrerit.</p>
+				<i class="fa-solid fa-quote-right"></i>
+				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+			</div>
+			<!-- iteam -->
+			<div class="slider-team">
+				<div class="d-flex">
+					<h5> Dr. Tomash</h5>
+					<ul class="d-flex">
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+					</ul>
+				</div>
+				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
+				<i class="fa-solid fa-quote-right"></i>
+				<div class="review-img"><img src="images/client-01.png" alt=""></div>
+			</div>
+			<!-- iteam -->
+			<div class="slider-team">
+				<div class="d-flex">
+					<h5> Dr. Mexual</h5>
+					<ul class="d-flex">
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+					</ul>
+				</div>
+				<p>Etiam ornare consequat molestie. In nec posuere odio, sed sagittis nibh. Pellentesque porta commodo magna, sit amet tincidunt nunc.</p>
+				<i class="fa-solid fa-quote-right"></i>
+				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+			</div>
+			<!-- iteam -->
+			<div class="slider-team">
+				<div class="d-flex">
+					<h5> Dr. Mexual</h5>
+					<ul class="d-flex">
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+					</ul>
+				</div>
+				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
+				<i class="fa-solid fa-quote-right"></i>
+				<div class="review-img"><img src="images/client-02.png" alt=""></div>
+			</div>
+			<!-- iteam -->
+			<div class="slider-team">
+				<div class="d-flex">
+					<h5> Dr. Mexual</h5>
+					<ul class="d-flex">
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+					</ul>
+				</div>
+				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
+				<i class="fa-solid fa-quote-right"></i>
+				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+			</div>
+			<!-- iteam -->
+		</div>
+	</div>
+</section>
+    <!-- ====================================
+        End Testimonial Here
+========================================= -->
+<section class="pagetwo teachers">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2> Who Stand By Your Kids Always</h2>
+					<p>We are group of teachers who really love childrens and enjoy every moment of teaching</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="teacher-slider owl-carousel owl-theme">
+			<div class="teacher-slider-item">
+				<img src="images/client-01.png" alt="">
+				<h4>STEVEA AILA</h4>
+				<span>Teacher</span>
+				<p>Seamlessly myocardinate user friendly e-commerce after transparent internal or "organic" sources. </p>
+				<div class="teacher-social">
+					<ul>
+						<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+					</ul>
+				</div>    
+			</div>
+			<!-- item -->
+			<div class="teacher-slider-item">
+				<img src="images/client-02.png" alt="">
+				<h4>ROBART WILLIAM</h4>
+				<span>Teacher</span>
+				<p>Quisque lobortis turpis ac libero posuere iaculis. In justo dui, vehicula a maximus ac, bibendum ut justo.</p>
+				<div class="teacher-social">
+					<ul>
+						<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+					</ul>
+				</div>    
+			</div>
+			<!-- item -->
+			<div class="teacher-slider-item">
+				<img src="images/client-01.png" alt="">
+				<h4>JHON ROY</h4>
+				<span>Teacher</span>
+				<p>Vivamus laoreet sodales lectus id blandit. Aenean ac nibh sit amet quam semper scelerisque eu.</p>
+				<div class="teacher-social">
+					<ul>
+						<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- item -->
+			<div class="teacher-slider-item">
+				<img src="images/client-03.png" alt="">
+				<h4>MARK AILA</h4>
+				<span>Teacher</span>
+				<p>Seamlessly myocardinate user friendly e-commerce after transparent internal or "organic" sources. </p>
+				<div class="teacher-social">
+					<ul>
+						<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- item -->
+
+		</div>
+		<!-- slider -->
+	</div>
+	<div class="teacher-shape"><img src="images/dots.png" alt=""></div>
+	<div class="teacher-shape-one"><img src="images/airplane.png" alt=""></div>
+	<div class="teacher-shape-two"><img src="images/dots.png" alt=""></div>
+	<div class="teacher-shape-three"><img src="images/dots.png" alt=""></div>
+</section>
+<!-- ====================================
+        End Teachers Area Here
+========================================= -->  
+<section class="pagetwo gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2>Photo Gallery</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="gallery-wrapper col-md-12">
+				<div class="filter-buttons">
+					<div class="button-group filters-button-group">
+						<button class="button is-checked" data-filter="*">All</button>
+						<button class="button" data-filter=".ct1">Our School</button>
+						<button class="button" data-filter=".ct2">Activities</button>
+					</div>
+				</div>
+			</div>
+		</div>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-md-4 grid-item ct3 ct4">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-01.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-01.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct1">
+                        <div class="single-gallery-item ">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-02.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-02.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct3">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-03.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-03.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-4 grid-item ct2 ct3 ct4">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-04.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-04.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct1">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-05.jpeg" alt=""></a>
+                            </div>  
+                            <div class="view">
+                                <a href="images/gallery-05.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct2 ct3 ct4">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-06.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-06.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>                  
+                        </div>
+                    </div>
+                    <!-- item -->
+                </div>  
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-4 grid-item ct2 ct3 ct4">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-07.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-07.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct1">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-08.jpeg" alt=""></a>
+                            </div>  
+                            <div class="view">
+                                <a href="images/gallery-08.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 grid-item ct2 ct3 ct4">
+                        <div class="single-gallery-item">
+                            <div class="single-gallery-itemimg">
+                                <a href=""><img src="images/gallery-09.jpeg" alt=""></a>
+                            </div>
+                            <div class="view">
+                                <a href="images/gallery-09.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                            </div>                  
+                        </div>
+                    </div>
+                    <!-- item -->
+                </div>  
+                <!-- row -->
+            </div>
+	</div>
+	<div class="g-bettarfly"><img src="images/betterfly.png" alt=""></div>
+	<div class="g-bettarfly-two"><img src="images/betterfly-01.png" alt=""></div>
+</section>
+<!-- ====================================
+        End Gellary Area Here
+========================================= -->
+<section class="blog-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2> Our Event</h2>
+					<p>We are group of teachers who really love childrens and enjoy every moment of teaching</p>
+				</div>
+			</div>
+		</div>
+		<div class="blog-main-area">
+			<div class="row">
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-01.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.04.12</span>
+							<h4>Imagination Classes.</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Newwork City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-02.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.01.12</span>
+							<h4>Number Classes.</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Wasington City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-03.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.05.12</span>
+							<h4>Music Classes.</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Thailand City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-06.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.03.12</span>
+							<h4>Developing Classes.</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Peris City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-05.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.07.12</span>
+							<h4>Paper Plates Art.</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> Dubai City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
+					<div class="single-blog d-flex">
+						<div class="blog-image"><img src="images/blog-01.png" alt=""></div>
+						<div class="blog-text">
+							<span>Date: 2022.08.12</span>
+							<h4>Draing Classes</h4>
+							<p>Lorem ipsum dolor amet consectur pisicelit sed eiusmod tempor indie</p>
+							<div class="blog-btn"> <a href="" class="btn btn-primary"><i class="fa-solid fa-location-dot"></i> London City</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- single blog -->
+			</div>
+		</div>
+	</div>
+	<div class="blog-shape-one"><img src="images/blog-air.png" alt=""></div>
+	<div class="blog-shape-two"><img src="images/yellow-cloud.png" alt=""></div>
+</section>
+<!-- ====================================
+        End Blog Area Here
+========================================= -->
+<section class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="section-title">
+					<h2> Contact With US</h2>
+					<p>We are group of teachers who really love childrens and enjoy every moment of teaching</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-8 col-md-8">
+				<div class="contact-form">
+					<form action="pagename.php">
+						<input type="text" name="" placeholder="First Name">
+						<input type="text" name="" placeholder="Last Name">
+						<input type="email" name="" placeholder="Enter Email">
+						<input type="text" name="" placeholder="Subject">
+						<textarea name="" id="" placeholder="Massage"></textarea>
+						<input type="submit" name="" id="" value="Send">
+					</form>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4 col-md-4">
+				<div class="contact-img">
+					<img src="images/baby.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-shap"><img src="images/Vector.png" alt=""></div>
+	<div class="contact-shap-two"><img src="images/Vector.png" alt=""></div>
+</section>
+<!-- ====================================
+        End Contact Here
+========================================= -->
+<div class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 clo-sm-6 cal-xxl-3">
+                <div class="call-to-action-img"><img src="images/calltoaction.png" alt=""></div>
+            </div>
+            <div class="col-md-8 clo-sm-6 cal-xxl-9">
+                <div class="call-to-action-text">
+                    <div>
+                        <h3>Subscribe Newsletter</h3>
+                        <p>Compellingly coordinate client-focused alignments for clicks-and-mortar.</p>
+                        <div class="call-to-action-from ">
+                            <form action="pagename.php" class="d-flex">
+                                <input type="text" placeholder="Enter your email">
+                                <input type="submit" value="Subscribe Now">
+                            </form>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="call-shape-one"><img src="images/white-cloud.png" alt=""></div>
+    <div class="call-shape-two"><img src="images/white-cloud.png" alt=""></div>
+    <div class="call-shape-three"><img src="images/dots.png" alt=""></div>
+    <div class="call-shape-four"><img src="images/airplane.png" alt=""></div>
+</div>
+<!-- ====================================
+    End Call to Action Area Here
+========================================= -->
+{% include 'include/footer.html' %}
+
+   <!-- Theme Need JS -->
 {% endblock %}
