@@ -11,6 +11,32 @@
         end Preloader
 ======================== -->
     {% include 'include/header.html' %}
+        <!-- end menu -->
+        <div class="container">
+            <div class="header-wrap">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 col-lg-7">
+                        <div class="header-text">
+                            <div class="text"> 
+                                <h1>About Us</h1> 
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="aboutcloud">
+                <img src="{% static 'images/cloud-01.png' %}" alt="">
+            </div>
+        </div>
+        <div class="animation"><img src="{% static 'images/3.gif' %}" alt=""></div>
+        <div class="animation-two"><img src="{% static 'images/7.gif' %}" alt=""></div>
+    </header>
 <!-- ====================================
         End Header Here
 ========================================= -->
@@ -27,10 +53,10 @@
                 <div class="col-12 col-md-7 col-lg-7">
                     <div class="about-img">
                         <div class="about-main-img">
-                            <img src="images/img.png" alt=""> 
+                            <img src="{% static 'images/img.png' %}" alt=""> 
                         </div>
-                        <div class="about-cloud-img-one"> <img src="images/white-cloud.png" alt=""> </div>
-                        <div class="about-cloud-img-two"> <img src="images/white-cloud.png" alt=""> </div>
+                        <div class="about-cloud-img-one"> <img src="{% static 'images/white-cloud.png' %}" alt=""> </div>
+                        <div class="about-cloud-img-two"> <img src="{% static 'images/white-cloud.png' %}" alt=""> </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-5">
@@ -42,12 +68,12 @@
                 </div>
             </div>
         </div>
-        <div class="about-main-cloud-one"> <img src="images/yellow-cloud.png" alt=""></div>
-        <div class="about-main-cloud-two"> <img src="images/yellow-cloud.png" alt=""></div>
-        <div class="about-main-shape-one"> <img src="images/shape-01.png" alt=""></div>
-        <div class="about-main-shape-two"> <img src="images/shape-02.png" alt=""></div>
-        <div class="animation"><img src="images/9.gif" alt=""></div>
-        <div class="animation-two"><img src="images/8.gif" alt=""></div>
+        <div class="about-main-cloud-one"> <img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+        <div class="about-main-cloud-two"> <img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+        <div class="about-main-shape-one"> <img src="{% static 'images/shape-01.png' %}" alt=""></div>
+        <div class="about-main-shape-two"> <img src="{% static 'images/shape-02.png' %}" alt=""></div>
+        <div class="animation"><img src="{% static 'images/9.gif' %}" alt=""></div>
+        <div class="animation-two"><img src="{% static 'images/8.gif' %}" alt=""></div>
     </section>
 <!-- ====================================
         End About Here
@@ -87,7 +113,7 @@
                 <!-- col-md-close -->
             </div>
         </div>
-        <div class="airplane"><img src="images/airplane.png" alt=""></div>
+        <div class="airplane"><img src="{% static 'images/airplane.png' %}" alt=""></div>
     </div>
 <!-- ====================================
         End Counter Area Here

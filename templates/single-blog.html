@@ -11,6 +11,32 @@
         end Preloader
 ======================== -->
 {% include 'include/header.html' %}
+	<!-- end menu -->
+	<div class="container">
+		<div class="header-wrap">
+			<div class="row">
+				<div class="col-md-7 col-sm-12 col-lg-7">
+					<div class="header-text">
+						<div class="text"> 
+							<h1>Single Post Page</h1> 
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+								  <li class="breadcrumb-item"><a href="#">Home</a></li>
+								  <li class="breadcrumb-item active" aria-current="page">Single Post Page</li>
+								</ol>
+							</nav>
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+		<div class="aboutcloud">
+			<img src="{% static 'images/cloud-01.png' %}" alt="">
+		</div>
+	</div>
+	<div class="animation"><img src="{% static 'images/3.gif' %}" alt=""></div>
+	<div class="animation-two"><img src="{% static 'images/7.gif' %}" alt=""></div>
+</header>
 <!-- ====================================
         End Header Here
 ========================================= -->
@@ -25,7 +51,7 @@
                         <div class="col-md-2 col-lg-2 col-sm-12">
                             <div class="blog-author">
                                 <div class="writter-img">
-                                    <img src="images/hom-03.png" alt="">
+                                    <img src="{% static 'images/hom-03.png' %}" alt="">
                                 </div>
                                 <div class="writter-share">
                                     <ul>
@@ -41,7 +67,7 @@
                             <div class="post-main-text">
                                 <p>Hybrid mobile applications are like any other applications you will see on your mobile. They get easily installed on your mobile device. You can look for these apps in the App stores. By using these apps, you can engage your friends via social media, play games, track your health, take photos and much more.</p>
                                 <p>Hybrid mobile applications are developed using a combination of web technologies like CSS, HTML, and JS as same as websites on the internet. The major difference is that hybrid applications are hosted inside a native app which further uses a mobile platform's WebView. Here, WebView is a chromeless browser window which is typically configured to run fullscreen. </p>
-                                <img src="images/post-01.jpg" alt="">
+                                <img src="{% static 'images/post-01.jpg" alt="">
                                 <p>Unless you are the one who really cares about this, it is not terribly important. What all matters are how your hybrid mobile application development is going to work in the long run as no one will care about how it was built. A hybrid mobile application is said to be good if it performs well for its users.</p>
                                 <p>Unless you are the one who really cares about this, it is not terribly important. What all matters are how your hybrid mobile application development is going to work in the long run as no one will care about how it was built. A hybrid mobile application is said to be good if it performs well for its users.</p>
                             </div>
@@ -86,7 +112,7 @@
                         <h4>Latest Post</h4>
                         <div class="course-fature-slider owl-carousel owl-theme">
                             <div class="slider-item">
-                                <img src="images/pagetwo-01.png" alt="">
+                                <img src="{% static 'images/pagetwo-01.png' %}" alt="">
                                 <h5><a href=""> Working on Products used </a></h5>
                                 <p>We are group of teachers who really love childrens and eaching and playing with our </p>
                                 <div class="d-flex justify-content-between">
@@ -96,7 +122,7 @@
                             </div>
                             <!-- item -->
                             <div class="slider-item">
-                                <img src="images/pagetwo-03.png" alt="">
+                                <img src="{% static 'images/pagetwo-03.png' %}" alt="">
                                 <h5><a href=""> Working on Products used </a></h5>
                                 <p>We are group of teachers who really love childrens and eaching and playing with our </p>
                                 <div class="d-flex justify-content-between">
@@ -106,7 +132,7 @@
                             </div>
                             <!-- item -->
                             <div class="slider-item">
-                                <img src="images/pagetwo-02.png" alt="">
+                                <img src="{% static 'images/pagetwo-02.png' %}" alt="">
                                 <h5><a href=""> Working on Products used </a></h5>
                                 <p>We are group of teachers who really love childrens and eaching and playing with our </p>
                                 <div class="d-flex justify-content-between">

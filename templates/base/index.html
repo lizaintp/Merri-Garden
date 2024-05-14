@@ -16,9 +16,9 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="header-top-info">
                         <ul>
-                            <li><i class="fa-solid fa-location-dot"></i> Street name 123 - New York</li>
-                            <li><i class="fa-solid fa-envelope"></i> mail@yourdomain.com </li>
-                            <li><i class="fa-solid fa-phone"></i> (123) 456-789</li>
+                            <li><i class="fa-solid fa-location-dot"></i> ул.Нурматова 82/9 - Ош</li>
+                            <li><i class="fa-solid fa-envelope"></i> merrigarden@gmail.com </li>
+                            <li><i class="fa-solid fa-phone"></i> +996707040303</li>
                         </ul>
                     </div>
                 </div>
@@ -37,6 +37,67 @@
     </div>
     <!-- Header-top -->
     {% include 'include/header.html' %}
+        <div class="container">
+            <!-- end menu -->
+            <div class="header-slider owl-carousel owl-theme">
+                <div class="header-slider-item">
+                    <div class="header-slider-text">
+                        <h1>Make Your Children’s  Life Special</h1>
+                        <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
+                    </div>
+                    <div class="haeader-slider-form">
+                        <form action="pagename.php" class="d-flex">
+                            <input type="text" placeholder="Search Your Courese">
+							<a href="" class="btn-search"><img src="{% static 'images/search.png' %}" alt=""></a>
+                        </form>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="header-slider-item">
+                    <div class="header-slider-text">
+                        <h1>Better Education Better Life</h1>
+                        <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
+                    </div>
+                    <div class="haeader-slider-form">
+                        <form action="pagename.php" class="d-flex">
+                            <input type="text" placeholder="Search Your Courese">
+                            <a href="" class="btn-search"><img src="{% static 'images/search.png' %}" alt=""></a>
+                        </form>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="header-slider-item">
+                    <div class="header-slider-text">
+                        <h1>Education is the power of world </h1>
+                        <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
+                    </div>
+                    <div class="haeader-slider-form">
+                        <form action="pagename.php" class="d-flex">
+                            <input type="text" placeholder="Search Your Courese">
+                            <a href="" class="btn-search"><img src="{% static 'images/search.png' %}" alt=""></a>
+                        </form>
+                    </div>
+                </div>
+                <!-- iteam -->
+                <div class="header-slider-item">
+                    <div class="header-slider-text">
+                        <h1>Good Learning Better Living</h1>
+                        <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
+                    </div>
+                    <div class="haeader-slider-form">
+                        <form action="pagename.php" class="d-flex">
+                            <input type="text" placeholder="Search Your Courese">
+                            <a href="" class="btn-search"><img src="{% static 'images/search.png' %}" alt=""></a>
+                        </form>
+                    </div>
+                </div>
+                <!-- iteam -->
+            </div> 
+        </div>
+        <div class="cloud">
+            <img src="{% static 'images/graybg.png' %}" alt="">
+        </div>
+    </header>
 <!-- ====================================
         End Header Here
 ========================================= -->
@@ -84,10 +145,10 @@
 			<div class="col-12 col-md-6 col-lg-6">
 				<div class="about-img">
 					<div class="about-main-img">
-						<img src="images/homepageabout.png" alt=""> 
+						<img src="{% static 'images/homepageabout.png' %}" alt=""> 
 					</div>
-					<div class="about-cloud-img-one"> <img src="images/white-cloud.png" alt=""> </div>
-					<div class="about-cloud-img-two"> <img src="images/white-cloud.png" alt=""> </div>
+					<div class="about-cloud-img-one"> <img src="{% static 'images/white-cloud.png' %}" alt=""> </div>
+					<div class="about-cloud-img-two"> <img src="{% static 'images/white-cloud.png' %}" alt=""> </div>
 
 				</div>
 			</div>
@@ -100,10 +161,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="about-main-cloud-one"> <img src="images/yellow-cloud.png" alt=""></div>
-	<div class="about-main-cloud-two"> <img src="images/yellow-cloud.png" alt=""></div>
-	<div class="about-main-shape-one"> <img src="images/shape-01.png" alt=""></div>
-	<div class="about-main-shape-two"> <img src="images/shape-02.png" alt=""></div>
+	<div class="about-main-cloud-one"> <img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+	<div class="about-main-cloud-two"> <img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+	<div class="about-main-shape-one"> <img src="{% static 'images/shape-01.png' %}" alt=""></div>
+	<div class="about-main-shape-two"> <img src="{% static 'images/shape-02.png' %}" alt=""></div>
 </section>
 <!-- ====================================
         End About Here
@@ -114,7 +175,7 @@
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="home-two single-counter">
 					<div class="counter-single-area">   
-						<img src="images/counter-01.png" alt="">
+						<img src="{% static 'images/counter-01.png' %}" alt="">
 						<span class="counter">4325</span>
 						<p>Total Student</p>
 					</div>
@@ -124,7 +185,7 @@
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="home-two single-counter">
 					<div class="counter-single-area">
-						<img src="images/counter-02.png" alt="">
+						<img src="{% static 'images/counter-02.png' %}" alt="">
 						<span class="counter">325</span>
 						<p>Class Room</p>
 					</div>
@@ -134,7 +195,7 @@
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="home-two single-counter">
 					<div class="counter-single-area">
-						<img src="images/counter-03.png" alt="">
+						<img src="{% static 'images/counter-03.png' %}" alt="">
 						<span class="counter">225</span>
 						<p>Total Teacher</p>
 					</div>
@@ -143,7 +204,7 @@
 			<!-- col-md-close -->
 		</div>
 	</div>
-	<div class="airplane"><img src="images/airplane.png" alt=""></div>
+	<div class="airplane"><img src="{% static 'images/airplane.png' %}" alt=""></div>
 </div>
 <!-- ====================================
         End Counter Area Here
@@ -159,7 +220,7 @@
 			</div>
 			<div class="col-12 col-md-5 col-lg-5">
 				<div class="service-single-box d-flex justify-content-between">
-					 <img src="images/homepage-service.png" alt="">
+					 <img src="{% static 'images/homepage-service.png' %}" alt="">
 				</div>
 			</div>
 			<!-- col-md-4 -->
@@ -218,7 +279,7 @@
             <div class="classes-slider owl-carousel owl-theme">
                 <div class="classes-slider-item">
                     <div class="slider-img">
-                        <img src="images/pagetwo-01.png" alt="">
+                        <img src="{% static 'images/pagetwo-01.png' %}" alt="">
                         <div class="pagetwo-price">$50</div>
                     </div>
                     <div class="slider-description">   
@@ -244,7 +305,7 @@
                 <!-- iteam -->
                 <div class="classes-slider-item">
                     <div class="slider-img">
-                        <img src="images/pagetwo-02.png" alt="">
+                        <img src="{% static 'images/pagetwo-02.png' %}" alt="">
                     </div>
                     <div class="slider-description">
                         <div class="slider-text">
@@ -269,7 +330,7 @@
                 <!-- iteam -->
                 <div class="classes-slider-item">
                     <div class="slider-img">
-                        <img src="images/pagetwo-03.png" alt="">
+                        <img src="{% static 'images/pagetwo-03.png' %}" alt="">
                     </div>
                     <div class="slider-description">
                         <div class="slider-text">
@@ -294,7 +355,7 @@
                 <!-- iteam -->
                 <div class="classes-slider-item">
                     <div class="slider-img">
-                        <img src="images/slider-03.png" alt="">
+                        <img src="{% static 'images/slider-03.png' %}" alt="">
                     </div>
                     <div class="slider-description">
                         <div class="slider-title d-flex justify-content-between">
@@ -321,9 +382,9 @@
             <!-- slider -->
         </div>
         <!-- top area -->
-        <div class="classes-cloud-one"><img src="images/yellow-cloud.png" alt=""></div>
-        <div class="classes-cloud-two"><img src="images/yellow-cloud.png" alt=""></div>
-        <div class="classes-cloud-three"><img src="images/yellow-cloud.png" alt=""></div>
+        <div class="classes-cloud-one"><img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+        <div class="classes-cloud-two"><img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
+        <div class="classes-cloud-three"><img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
     </div>
 </section>
 <!-- ====================================
@@ -334,7 +395,7 @@
         <div class="row">
             <div class="col-12 col-md-5 col-lg-5">
                 <div class="video-img">
-                    <img src="images/video.png" alt="">
+                    <img src="{% static 'images/video.png' %}" alt="">
                 </div>
             </div>
             <div class="col-12 col-md-7 col-lg-7">
@@ -372,7 +433,7 @@
 				</div>
 				<p>Morbi ut massa pharetra, rutrum leo ut, porta turpis. Nullam accumsan neque in ante semper commodo tristique nec risu hendrerit.</p>
 				<i class="fa-solid fa-quote-right"></i>
-				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+				<div class="review-img"><img src="{% static 'images/client-03.png' %}" alt=""></div>
 			</div>
 			<!-- iteam -->
 			<div class="slider-team">
@@ -388,7 +449,7 @@
 				</div>
 				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
 				<i class="fa-solid fa-quote-right"></i>
-				<div class="review-img"><img src="images/client-01.png" alt=""></div>
+				<div class="review-img"><img src="{% static 'images/client-01.png' %}" alt=""></div>
 			</div>
 			<!-- iteam -->
 			<div class="slider-team">
@@ -404,7 +465,7 @@
 				</div>
 				<p>Etiam ornare consequat molestie. In nec posuere odio, sed sagittis nibh. Pellentesque porta commodo magna, sit amet tincidunt nunc.</p>
 				<i class="fa-solid fa-quote-right"></i>
-				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+				<div class="review-img"><img src="{% static 'images/client-03.png' %}" alt=""></div>
 			</div>
 			<!-- iteam -->
 			<div class="slider-team">
@@ -420,7 +481,7 @@
 				</div>
 				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
 				<i class="fa-solid fa-quote-right"></i>
-				<div class="review-img"><img src="images/client-02.png" alt=""></div>
+				<div class="review-img"><img src="{% static 'images/client-02.png' %}" alt=""></div>
 			</div>
 			<!-- iteam -->
 			<div class="slider-team">
@@ -436,7 +497,7 @@
 				</div>
 				<p>Authoritatively reconceptualize business convergence via backend expertise. Globally incubate cross-unit portals with cross-media.</p>
 				<i class="fa-solid fa-quote-right"></i>
-				<div class="review-img"><img src="images/client-03.png" alt=""></div>
+				<div class="review-img"><img src="{% static 'images/client-03.png' %}" alt=""></div>
 			</div>
 			<!-- iteam -->
 		</div>
@@ -458,7 +519,7 @@
 
 		<div class="teacher-slider owl-carousel owl-theme">
 			<div class="teacher-slider-item">
-				<img src="images/client-01.png" alt="">
+				<img src="{% static 'images/client-01.png' %}" alt="">
 				<h4>STEVEA AILA</h4>
 				<span>Teacher</span>
 				<p>Seamlessly myocardinate user friendly e-commerce after transparent internal or "organic" sources. </p>
@@ -473,7 +534,7 @@
 			</div>
 			<!-- item -->
 			<div class="teacher-slider-item">
-				<img src="images/client-02.png" alt="">
+				<img src="{% static 'images/client-02.png' %}" alt="">
 				<h4>ROBART WILLIAM</h4>
 				<span>Teacher</span>
 				<p>Quisque lobortis turpis ac libero posuere iaculis. In justo dui, vehicula a maximus ac, bibendum ut justo.</p>
@@ -488,7 +549,7 @@
 			</div>
 			<!-- item -->
 			<div class="teacher-slider-item">
-				<img src="images/client-01.png" alt="">
+				<img src="{% static 'images/client-01.png' %}" alt="">
 				<h4>JHON ROY</h4>
 				<span>Teacher</span>
 				<p>Vivamus laoreet sodales lectus id blandit. Aenean ac nibh sit amet quam semper scelerisque eu.</p>
@@ -503,7 +564,7 @@
 			</div>
 			<!-- item -->
 			<div class="teacher-slider-item">
-				<img src="images/client-03.png" alt="">
+				<img src="{% static 'images/client-03.png' %}" alt="">
 				<h4>MARK AILA</h4>
 				<span>Teacher</span>
 				<p>Seamlessly myocardinate user friendly e-commerce after transparent internal or "organic" sources. </p>
@@ -521,10 +582,10 @@
 		</div>
 		<!-- slider -->
 	</div>
-	<div class="teacher-shape"><img src="images/dots.png" alt=""></div>
-	<div class="teacher-shape-one"><img src="images/airplane.png" alt=""></div>
-	<div class="teacher-shape-two"><img src="images/dots.png" alt=""></div>
-	<div class="teacher-shape-three"><img src="images/dots.png" alt=""></div>
+	<div class="teacher-shape"><img src="{% static 'images/dots.png' %}" alt=""></div>
+	<div class="teacher-shape-one"><img src="{% static 'images/airplane.png' %}" alt=""></div>
+	<div class="teacher-shape-two"><img src="{% static 'images/dots.png' %}" alt=""></div>
+	<div class="teacher-shape-three"><img src="{% static 'images/dots.png' %}" alt=""></div>
 </section>
 <!-- ====================================
         End Teachers Area Here
@@ -554,10 +615,10 @@
                     <div class="col-md-4 grid-item ct3 ct4">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-01.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-01.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-01.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-01.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div> 
                     </div>
@@ -565,10 +626,10 @@
                     <div class="col-md-4 grid-item ct1">
                         <div class="single-gallery-item ">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-02.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-02.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-02.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-02.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
@@ -576,10 +637,10 @@
                     <div class="col-md-4 grid-item ct3">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-03.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-03.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-03.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-03.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
@@ -590,10 +651,10 @@
                     <div class="col-md-4 grid-item ct2 ct3 ct4">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-04.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-04.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-04.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-04.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div> 
                     </div>
@@ -601,10 +662,10 @@
                     <div class="col-md-4 grid-item ct1">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-05.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-05.jpeg' %}" alt=""></a>
                             </div>  
                             <div class="view">
-                                <a href="images/gallery-05.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-05.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
@@ -612,10 +673,10 @@
                     <div class="col-md-4 grid-item ct2 ct3 ct4">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-06.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-06.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-06.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-06.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>                  
                         </div>
                     </div>
@@ -626,10 +687,10 @@
                     <div class="col-md-4 grid-item ct2 ct3 ct4">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-07.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-07.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-07.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-07.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div> 
                     </div>
@@ -637,10 +698,10 @@
                     <div class="col-md-4 grid-item ct1">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-08.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-08.jpeg' %}" alt=""></a>
                             </div>  
                             <div class="view">
-                                <a href="images/gallery-08.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-08.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>
                         </div>
                     </div>
@@ -648,10 +709,10 @@
                     <div class="col-md-4 grid-item ct2 ct3 ct4">
                         <div class="single-gallery-item">
                             <div class="single-gallery-itemimg">
-                                <a href=""><img src="images/gallery-09.jpeg" alt=""></a>
+                                <a href=""><img src="{% static 'images/gallery-09.jpeg' %}" alt=""></a>
                             </div>
                             <div class="view">
-                                <a href="images/gallery-09.jpeg" class="port-view"><i class="fa-solid fa-eye"></i></a>
+                                <a href="{% static 'images/gallery-09.jpeg' %}" class="port-view"><i class="fa-solid fa-eye"></i></a>
                             </div>                  
                         </div>
                     </div>
@@ -660,8 +721,8 @@
                 <!-- row -->
             </div>
 	</div>
-	<div class="g-bettarfly"><img src="images/betterfly.png" alt=""></div>
-	<div class="g-bettarfly-two"><img src="images/betterfly-01.png" alt=""></div>
+	<div class="g-bettarfly"><img src="{% static 'images/betterfly.png' %}" alt=""></div>
+	<div class="g-bettarfly-two"><img src="{% static 'images/betterfly-01.png' %}" alt=""></div>
 </section>
 <!-- ====================================
         End Gellary Area Here
@@ -680,7 +741,7 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-01.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-01.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.04.12</span>
 							<h4>Imagination Classes.</h4>
@@ -692,7 +753,7 @@
 				<!-- single blog -->
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-02.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-02.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.01.12</span>
 							<h4>Number Classes.</h4>
@@ -704,7 +765,7 @@
 				<!-- single blog -->
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-03.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-03.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.05.12</span>
 							<h4>Music Classes.</h4>
@@ -716,7 +777,7 @@
 				<!-- single blog -->
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-06.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-06.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.03.12</span>
 							<h4>Developing Classes.</h4>
@@ -728,7 +789,7 @@
 				<!-- single blog -->
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-05.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-05.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.07.12</span>
 							<h4>Paper Plates Art.</h4>
@@ -740,7 +801,7 @@
 				<!-- single blog -->
 				<div class="col-md-12 col-sm-6 col-lg-6 col-xxl-4">
 					<div class="single-blog d-flex">
-						<div class="blog-image"><img src="images/blog-01.png" alt=""></div>
+						<div class="blog-image"><img src="{% static 'images/blog-01.png' %}" alt=""></div>
 						<div class="blog-text">
 							<span>Date: 2022.08.12</span>
 							<h4>Draing Classes</h4>
@@ -753,8 +814,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="blog-shape-one"><img src="images/blog-air.png" alt=""></div>
-	<div class="blog-shape-two"><img src="images/yellow-cloud.png" alt=""></div>
+	<div class="blog-shape-one"><img src="{% static 'images/blog-air.png' %}" alt=""></div>
+	<div class="blog-shape-two"><img src="{% static 'images/yellow-cloud.png' %}" alt=""></div>
 </section>
 <!-- ====================================
         End Blog Area Here
@@ -784,13 +845,13 @@
 			</div>
 			<div class="col-12 col-lg-4 col-md-4">
 				<div class="contact-img">
-					<img src="images/baby.png" alt="">
+					<img src="{% static 'images/baby.png' %}" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="contact-shap"><img src="images/Vector.png" alt=""></div>
-	<div class="contact-shap-two"><img src="images/Vector.png" alt=""></div>
+	<div class="contact-shap"><img src="{% static 'images/Vector.png' %}" alt=""></div>
+	<div class="contact-shap-two"><img src="{% static 'images/Vector.png' %}" alt=""></div>
 </section>
 <!-- ====================================
         End Contact Here
@@ -799,7 +860,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 clo-sm-6 cal-xxl-3">
-                <div class="call-to-action-img"><img src="images/calltoaction.png" alt=""></div>
+                <div class="call-to-action-img"><img src="{% static 'images/calltoaction.png' %}" alt=""></div>
             </div>
             <div class="col-md-8 clo-sm-6 cal-xxl-9">
                 <div class="call-to-action-text">
@@ -817,10 +878,10 @@
             </div>
         </div>
     </div>
-    <div class="call-shape-one"><img src="images/white-cloud.png" alt=""></div>
-    <div class="call-shape-two"><img src="images/white-cloud.png" alt=""></div>
-    <div class="call-shape-three"><img src="images/dots.png" alt=""></div>
-    <div class="call-shape-four"><img src="images/airplane.png" alt=""></div>
+    <div class="call-shape-one"><img src="{% static 'images/white-cloud.png' %}" alt=""></div>
+    <div class="call-shape-two"><img src="{% static 'images/white-cloud.png' %}" alt=""></div>
+    <div class="call-shape-three"><img src="{% static 'images/dots.png' %}" alt=""></div>
+    <div class="call-shape-four"><img src="{% static 'images/airplane.png' %}" alt=""></div>
 </div>
 <!-- ====================================
     End Call to Action Area Here

@@ -1,106 +1,34 @@
-{% load static % }
+{% load static %}
 <header class="homepage-two header">
     <div class="menu">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="{% url 'index' %}"><img src="{{settings.image.url}}" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                         <li class="nav-item dropdown">
                             <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Главная страница</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'courses' %}">Courses</a> </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">Pages</a> 
                             <ul class="dropdown-menu">
-                                <li class="nav-item dropdown"><a class="dropdown-item" href="index.html">Home Page</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="dropdown-item" href="index.html">Home Page1</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="index-02.html">Home Page2</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="index-03.html">Home Page3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="dropdown-item" href="about.html">About-US</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="teacher.html">Our Teacher</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="teacher-profile.html">Teacher Single Profile</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="courses.html">Courses</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="single-course.html">Single Course</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="blog-page.html">Blog Page</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="single-blog.html">Signle Blog</a></li>
-                                <li class="nav-item"><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{% url 'about' %}">О нас</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{% url 'comand_profile' %}">Teacher Single Profile</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{% url 'single_course' %}">Single Course</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{% url 'single_blog' %}">Signle Blog</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="blog-page.html">Blog</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="teacher.html">Teacher</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a> </li>
-                        <li class="nav-item"><a class="nav-link btn btn-primary kids-active-btn" href="#"> Sign Up</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Новости</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'comand' %}">Наша команда</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Контакты</a> </li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary kids-active-btn" href="https://www.instagram.com/merri.garden/"> Подписаться</a> </li>
                     </ul> 
                 </div>
             </nav>
         </div>
     </div>
     <!-- end menu -->
-    <div class="header-shape-one"><img src="images/header-shape-01.png" alt=""></div>
-    <div class="header-shape-two"><img src="images/header-shape-02.png" alt=""></div>
-    <div class="header-shape-three"><img src="images/footer-01.png" alt=""></div>
-    <div class="container">
-        <!-- end menu -->
-        <div class="header-slider owl-carousel owl-theme">
-            <div class="header-slider-item">
-                <div class="header-slider-text">
-                    <h1>Make Your Children’s  Life Special</h1>
-                    <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
-                </div>
-                <div class="haeader-slider-form">
-                    <form action="pagename.php" class="d-flex">
-                        <input type="text" placeholder="Search Your Courese">
-                        <a href="" class="btn-search"><img src="images/search.png" alt=""></a>
-                    </form>
-                </div>
-            </div>
-            <!-- iteam -->
-            <div class="header-slider-item">
-                <div class="header-slider-text">
-                    <h1>Better Education Better Life</h1>
-                    <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
-                </div>
-                <div class="haeader-slider-form">
-                    <form action="pagename.php" class="d-flex">
-                        <input type="text" placeholder="Search Your Courese">
-                        <a href="" class="btn-search"><img src="images/search.png" alt=""></a>
-                    </form>
-                </div>
-            </div>
-            <!-- iteam -->
-            <div class="header-slider-item">
-                <div class="header-slider-text">
-                    <h1>Education is the power of world </h1>
-                    <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
-                </div>
-                <div class="haeader-slider-form">
-                    <form action="pagename.php" class="d-flex">
-                        <input type="text" placeholder="Search Your Courese">
-                        <a href="" class="btn-search"><img src="images/search.png" alt=""></a>
-                    </form>
-                </div>
-            </div>
-            <!-- iteam -->
-            <div class="header-slider-item">
-                <div class="header-slider-text">
-                    <h1>Good Learning Better Living</h1>
-                    <p>The Universe is one great kindergarten for man. Everything that exists has brought with it its own peculiar lesson.</p>
-                </div>
-                <div class="haeader-slider-form">
-                    <form action="pagename.php" class="d-flex">
-                        <input type="text" placeholder="Search Your Courese">
-                        <a href="" class="btn-search"><img src="images/search.png" alt=""></a>
-                    </form>
-                </div>
-            </div>
-            <!-- iteam -->
-        </div> 
-    </div>
-    <div class="cloud">
-        <img src="images/graybg.png" alt="">
-    </div>
-</header>
+    <div class="header-shape-one"><img src="{% static 'images/header-shape-01.png' %}" alt=""></div>
+    <div class="header-shape-two"><img src="{% static 'images/header-shape-02.png' %}" alt=""></div>
+    <div class="header-shape-three"><img src="{% static 'images/footer-01.png' %}" alt=""></div>

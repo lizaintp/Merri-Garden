@@ -11,6 +11,32 @@
         end Preloader
 ======================== -->
 {% include 'include/header.html' %}
+	<!-- end menu -->
+	<div class="container">
+		<div class="header-wrap">
+			<div class="row">
+				<div class="col-md-7 col-sm-12 col-lg-7">
+					<div class="header-text">
+						<div class="text"> 
+							<h1>Контакты</h1> 
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+								  <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+								  <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+								</ol>
+							</nav>
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+		<div class="aboutcloud">
+			<img src="{% static 'images/cloud-01.png' %}" alt="">
+		</div>
+	</div>
+	<div class="animation"><img src="{% static 'images/3.gif' %}" alt=""></div>
+	<div class="animation-two"><img src="{% static 'images/7.gif' %}" alt=""></div>
+</header>
 <!-- ====================================
         End Header Here
 ========================================= -->
@@ -30,26 +56,26 @@
                     <div class="contact-form">
                     	<div id="contact"> 
 	                        <form class="form" method="post" action="contact.php" name="contactform" id="contactform">
-	                            <input type="text" placeholder="First Name" required="required" name="name" id="name">
-	                            <input type="text" placeholder="Last Name" required="required" name="lname" id="lname">
-	                            <input type="email" placeholder="Enter Email" required="required" name="email" id="email">
-	                            <input type="text" placeholder="Subject" required="required" name="subject" id="subject">
+	                            <input type="text" placeholder="Имя" required="required" name="name" id="name">
+	                            <input type="text" placeholder="Фамилия" required="required" name="lname" id="lname">
+	                            <input type="email" placeholder="Почта" required="required" name="email" id="email">
+	                            <input type="text" placeholder="Тема" required="required" name="subject" id="subject">
 	                            <textarea name="message" rows="6" placeholder="Message" id="comments"></textarea>
-	                            <input type="submit" name="" id="" value="Send">
+	                            <input type="submit" name="" id="" value="Отправить">
 	                        </form>
                     	</div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-4">
                     <div class="contact-img">
-                        <img src="images/baby.png" alt="">
+                        <img src="{% static 'images/baby.png' %}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="teacher-shape-two"><img src="images/dots.png" alt=""></div>
-    <div class="teacher-shape-three"><img src="images/dots.png" alt=""></div>
+    <div class="teacher-shape-two"><img src="{% static 'images/dots.png' %}" alt=""></div>
+    <div class="teacher-shape-three"><img src="{% static 'images/dots.png' %}" alt=""></div>
 </section>
 <!-- ====================================
     End Contactpage Area Here
