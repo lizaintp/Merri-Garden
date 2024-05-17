@@ -4,17 +4,35 @@ from django.shortcuts import render
 def blog(request):
     return render(request, 'blog.html', locals())
 
-def courses(request):
-    return render(request, 'courses.html', locals())
+def blog_sidebar(request):
+    return render(request, 'blog-sidebar.html', locals())
 
-def single_blog(request):
-    return render(request, 'single-blog.html', locals())
+def cart(request):
+    return render(request, 'cart.html', locals())
 
-def single_course(request):
-    return render(request, 'single-course.html', locals())
+def checkout(request):
+    return render(request, 'checkout.html', locals())
 
-def comand_profile(request):
-    return render(request, 'comand-profile.html', locals())
+def cart(request):
+    return render(request, 'cart.html', locals())
 
-def comand(request):
-    return render(request, 'comand.html', locals())
+def checkout(request):
+    return render(request, 'checkout.html', locals())
+
+def grid_sidebar(request):
+    return render(request, 'grid-sidebar.html', locals())
+
+def member_login(request):
+    return render(request, 'member-login.html', locals())
+
+def my_profile(request):
+    return render(request, 'my-profile.html', locals())
+
+def quick_view(request):
+    return render(request, 'quick-view.html', locals())
+
+def single(request):
+    return render(request, 'single.html', locals())
+
+def vendor_shop(request):
+    return render(request, 'vendor-shop.html', locals())

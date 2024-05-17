@@ -1,90 +1,146 @@
 {% extends 'include/homepage.html' %}
 {% load static %}
 {% block content %}
-<body>
- <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
-<!-- =======================
-        end Preloader
-======================== -->
-{% include 'include/header.html' %}
-	<!-- end menu -->
-	<div class="container">
-		<div class="header-wrap">
-			<div class="row">
-				<div class="col-md-7 col-sm-12 col-lg-7">
-					<div class="header-text">
-						<div class="text"> 
-							<h1>Контакты</h1> 
-							<nav aria-label="breadcrumb">
-								<ol class="breadcrumb">
-								  <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
-								  <li class="breadcrumb-item active" aria-current="page">Контакты</li>
-								</ol>
-							</nav>
+<div class="wrap">
+	{% include 'include/header.html' %}
+	<!-- End Header -->
+	<div id="content">
+		<div class="bread-crumb">
+			<div class="container">
+				<a href="#">Home</a> <span>Contact Us</span>
+			</div>
+		</div>
+		<!-- End Bread Crumb -->
+		<div class="content-pages">
+			<div class="container">
+				<div class="content-contact-page">
+					<h2 class="title30 mont-font">contact us</h2>
+					<div class="contact-google-map bg-white border">
+						<div id="map" class="map-custom"></div>
+						<script>
+						  function initMap() {
+							var myLatLng = {lat: 40.707914, lng: -74.009628};
+
+							var map = new google.maps.Map(document.getElementById('map'), {
+							  zoom: 12,
+							  center: myLatLng
+							});
+
+							var marker = new google.maps.Marker({
+							  position: myLatLng,
+							  map: map,
+							});
+						  }
+						</script>
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEkQ6AW_lnHAzPiXPdSNy1GKXiI1I9AGg&callback=initMap" async defer></script>
+					</div>
+					<!-- End Google Map -->
+					<div class="contact-page-info blockquote">
+						<div class="row">
+							<div class="col-md-5 col-sm-12 col-xs-12">
+								<div class="contact-box contact-address-box">
+									<span class="color"><i class="fa fa-institution"></i></span>
+									<label class="title16 color">ADDRESS:</label>
+									<p class="desc">The Company Name Inc. 4320 St Vincent Place,Glasgow, DC 28</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-7 col-xs-12">
+								<div class="contact-box">
+									<span class="color"><i class="fa fa-phone"></i></span>
+									<ul class="list-inline-block">
+										<li>
+											<label class="title16 color">PHONES:</label>
+										</li>
+										<li>
+											<span>800-6688-999;</span>
+											<span>800-8866-404</span>
+										</li>
+									</ul>
+								</div>
+								<div class="contact-box">
+									<span class="color"><i class="fa fa-fax"></i></span>
+									<ul class="list-inline-block">
+										<li>
+											<label class="title16 color">Fax:</label>
+										</li>
+										<li>
+											<span>800-6969-0044;</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-5 col-xs-12">
+								<div class="contact-box">
+									<span class="color"><i class="fa fa-envelope-open"></i></span>
+									<label class="title16 color">e-mail:</label>
+									<p class="desc"><a href="#">goodshop@gmail.com</a></p>
+								</div>
+							</div>
 						</div>
-					</div>  
+					</div>
+					<!-- End Contact Info -->
+					<div class="contact-form-faq">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="contact-form">
+									<h2 class="title18">Contact Form</h2>
+									<form>
+										<input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" value="Your name *" type="text">
+										<input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" value="Your e-mail address *" type="text">
+										<input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" value="Subject *" type="text">
+										<textarea onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" rows="7">Message *</textarea>
+										<input type="submit" value="send" class="shop-button" />
+										<input type="reset" value="Clear" class="shop-button style2" />
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="contact-faq">
+									<h2 class="title18">FAQs</h2>
+									<div class="contact-accordion toggle-tab">
+										<div class="item-toggle-tab active">
+											<h2 class="toggle-tab-title">At vero eos et accusamus et iusto</h2>
+											<p class="desc toggle-tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi archi tecto aspernatur assumenda cum inventore labore magnam </p>
+										</div>
+										<div class="item-toggle-tab">
+											<h2 class="toggle-tab-title">Dignissimos ducimus qui blanditiis</h2>
+											<p class="desc toggle-tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi archi tecto aspernatur assumenda cum inventore labore magnam </p>
+										</div>
+										<div class="item-toggle-tab">
+											<h2 class="toggle-tab-title">Raesentium voluptatum deleniti</h2>
+											<p class="desc toggle-tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi archi tecto aspernatur assumenda cum inventore labore magnam </p>
+										</div>
+										<div class="item-toggle-tab">
+											<h2 class="toggle-tab-title">At vero eos et accusamus et iusto</h2>
+											<p class="desc toggle-tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi archi tecto aspernatur assumenda cum inventore labore magnam </p>
+										</div>
+										<div class="item-toggle-tab">
+											<h2 class="toggle-tab-title">Dignissimos ducimus qui blanditiis</h2>
+											<p class="desc toggle-tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi archi tecto aspernatur assumenda cum inventore labore magnam </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="aboutcloud">
-			<img src="{% static 'images/cloud-01.png' %}" alt="">
+		<!-- End Content Pages -->
+	</div>
+	<!-- End Content -->
+	{% include 'include/footer.html' %}
+	<!-- End Footer -->
+	<div class="wishlist-mask">
+		<div class="wishlist-popup">
+			<span class="popup-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+			<p class="wishlist-alert">"Lucky shop Product" was added to wishlist</p>
+			<div class="wishlist-button">
+				<a href="#">Continue Shopping (<span class="wishlist-countdown">10</span>)</a>
+				<a href="#">Go To Shopping Cart</a>
+			</div>
 		</div>
 	</div>
-	<div class="animation"><img src="{% static 'images/3.gif' %}" alt=""></div>
-	<div class="animation-two"><img src="{% static 'images/7.gif' %}" alt=""></div>
-</header>
-<!-- ====================================
-        End Header Here
-========================================= -->
-<section class="pagetwo contact-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-                <div class="section-title">
-                    <h2>Need Any Help?</h2>
-                    <p>We are group of teachers who really love childrens and enjoy every moment of teaching</p>
-                </div>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="row">
-                <div class="col-12 col-lg-8 col-md-8">
-                    <div class="contact-form">
-                    	<div id="contact"> 
-	                        <form class="form" method="post" action="contact.php" name="contactform" id="contactform">
-	                            <input type="text" placeholder="Имя" required="required" name="name" id="name">
-	                            <input type="text" placeholder="Фамилия" required="required" name="lname" id="lname">
-	                            <input type="email" placeholder="Почта" required="required" name="email" id="email">
-	                            <input type="text" placeholder="Тема" required="required" name="subject" id="subject">
-	                            <textarea name="message" rows="6" placeholder="Message" id="comments"></textarea>
-	                            <input type="submit" name="" id="" value="Отправить">
-	                        </form>
-                    	</div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-md-4">
-                    <div class="contact-img">
-                        <img src="{% static 'images/baby.png' %}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="teacher-shape-two"><img src="{% static 'images/dots.png' %}" alt=""></div>
-    <div class="teacher-shape-three"><img src="{% static 'images/dots.png' %}" alt=""></div>
-</section>
-<!-- ====================================
-    End Contactpage Area Here
-========================================= -->  
-<div class="map" id="map"></div>
-<!-- ====================================
-    End Map Area Here
-========================================= -->  
-{% include 'include/footer.html' %}
-
-    <!-- Theme Need JS -->
+	<a href="#" class="scroll-top round"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>
 {% endblock %}

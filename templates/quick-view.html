@@ -1,0 +1,95 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+<div class="wrap">
+	<div id="content">
+		<div class="container">
+			<div class="detail-product detail-quickview detail-external-link">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="detail-gallery">
+							<div class="wrap-detail-gallery">
+								<div class="mid">
+									<img src="{% static 'images/photos/topshop_product_02.jpg' %}" alt=""/>
+								</div>
+								<div class="gallery-control">
+									<div class="carousel">
+										<ul class="list-none">
+											<li><a href="#" class="active"><img src="{% static 'images/photos/topshop_product_02.jpg' %}" alt=""/></a></li>
+											<li><a href="#"><img src="{% static 'images/photos/topshop_product_03.jpg' %}" alt=""/></a></li>
+											<li><a href="#"><img src="{% static 'images/photos/topshop_product_04.jpg' %}" alt=""/></a></li>
+											<li><a href="#"><img src="{% static 'images/photos/topshop_product_11.jpg' %}" alt=""/></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="detail-social">
+								<a href="#" class="share-face"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#" class="share-twit"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#" class="share-pint"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<!-- End Gallery -->
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="detail-info">
+							<h2 class="title-product-detail">Topshop Name Product</h2>
+							<ul class="list-inline-block review-rating">
+								<li>
+									<div class="product-rate rate-counter">
+										<div class="product-rating" style="width:100%"></div>
+										<span>(1s)</span>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="add-review">Add your review</a>
+								</li>
+							</ul>
+							<div class="product-price">
+								<ins><span>$400.00</span></ins>
+								<del><span>$480.00</span></del>
+								<span class="sale-label">-20<sup>%</sup></span>
+							</div>
+							<div class="product-more-info">
+								<h2 class="title14">Product Features</h2>
+								<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh</p>
+								<ul class="list-none">
+									<li><a href="#">Seat Height - Floor to Seat: 24''</a></li>
+									<li><a href="#">Frame Material: Wood</a></li>
+									<li><a href="#">Seat Material: Wood</a></li>
+									<li><a href="#">Adjustable Height: No</a></li>
+									<li><a href="#">Overall: 24'' H x 17'' W x 14'' D</a></li>
+								</ul>
+							</div>
+							<div class="detail-qty info-qty border radius">
+								<a href="#" class="qty-down"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<span class="qty-val">1</span>
+								<a href="#" class="qty-up"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+							</div>
+							<a class="addcart-link add-cart-detail" href="#">Add to Cart</a>
+							<div class="product-extra-link">
+								<a href="#" class="wishlist-link"><i class="fa fa-heart" aria-hidden="true"></i><span>Wishlist</span></a>
+								<a href="#" class="compare-link"><i class="fa fa-stumbleupon" aria-hidden="true"></i><span>Compare</span></a>
+							</div>
+							<div class="detail-extra">
+								<p class="desc product-code">SUK: <span>tem009</span></p>
+								<p class="desc product-available">Available: <span class="avail-instock">instock</span></p>
+								<p class="desc tags-detail">
+									<span>Tags:</span> 
+									<a href="#">Homeware</a>
+									<a href="#">Furniture</a>
+									<a href="#">Living room</a>
+									<a href="#">Gift</a>
+									<a href="#">Flower</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Detail Product -->
+		</div>	
+	</div>
+	<!-- End Content -->
+</div>
+{% endblock %}
