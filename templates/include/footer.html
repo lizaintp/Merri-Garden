@@ -1,47 +1,27 @@
 {% load static %}
 <div id="footer">
     <div class="footer">
-        <div class="social-email">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="email-intro">
-                            <h2 class="title18 mont-font color">THE LATEST AND GREATEST:</h2>
-                            <p class="desc">Be the first to hear about new products and exclusive discounts.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-7 col-xs-12">
-                        <div class="newsletter-form">
-                            <form>
-                                <input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" value="enter you email address" type="text">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- End Social Email -->
         <div class="main-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box contact-footer">
-                            <h2 class="title18 mont-font color">CONTACT US</h2>
+                            <h2 class="title18 mont-font color">Контакты</h2>
                             <p class="contact-address">- Our business address is 63 Freelon Street San Francisco, CA 95108</p>
                             <p class="contact-mobile">- 996555226333</p>
-                            <p class="contact-email"> <a href="mailto:intpliza@gmail.com">- intpliza@gmail.com</a></p>
-                            <p class="contact-livechat">-  <a href="#">Live Chat</a></p>
+                            <p class="contact-email"> <a href="mailto:merrigarden@gmail.com">- merrigarden.com</a></p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box menu-footer">
-                            <h2 class="title18 mont-font color">topshop INFO</h2>
+                            <h2 class="title18 mont-font color">Страницы</h2>
                             <ul class="list-none">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="{% url 'about' %}">О нас</a></li>
+                                <li><a href="{% url 'blog' %}">Новости</a></li>
+                                <li><a href="{% url 'contact'}">Контакты</a></li>
+                                <li><a href="{% url 'comand' %}">Команда</a></li>
+                                <li><a href="{% url 'gallery' %}">Галерея</a></li>
                                 <li><a href="#">Affiliate Program</a></li>
                                 <li><a href="#">Media Kit</a></li>
                                 <li><a href="#">Refer-A-Friend</a></li>
@@ -51,16 +31,23 @@
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box instagram-footer">
                             <h2 class="title18 mont-font color">instagram</h2>
+                            <style>
+                                .list-instagram img.grow {
+                                    width: 500px;
+                                    height: 70px;
+                                    object-fit: cover;
+                                }
+                            </style>
                             <div class="list-instagram clearfix">
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_09.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_05.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_11.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_16.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_31.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_29.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_20.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_02.jpg' %}" alt="" /></a>
-                                <a href="#"><img class="grow" src="{% static 'images/photos/topshop_product_03.jpg' %}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CyTicA4Ij_P/?img_index=1"><img class="grow" src="{{insta.image.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CxYJn7qsB-S/?img_index=1"><img class="grow" src="{{insta.image2.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CxvbSSiM7wB/?img_index=1"><img class="grow" src="{{insta.image3.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CqkZlfgMmdA/?img_index=1"><img class="grow" src="{{insta.image4.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/Cf1nzDUs80H/?img_index=1"><img class="grow" src="{{insta.image5.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CTcVImPMDoy/?img_index=1"><img class="grow" src="{{insta.image6.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/CuoM9f2sQz9/"><img class="grow" src="{{insta.image7.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/Cf1vbJ3MmrO/?img_index=1"><img class="grow" src="{{insta.image8.url}}" alt="" /></a>
+                                <a href="https://www.instagram.com/p/Cdd2B7lMf-I/?img_index=1"><img class="grow" src="{{insta.image9.url}}" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -87,13 +74,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-sm-8 col-xs-12">
-                        <h2 class="logo-footer mont-font title24 inline-block"><a href="#" class="color">Merri Garden</a></h2>
+                        <h2 class="logo-footer mont-font title24 inline-block"><a href="{% url 'index' %}" class="color">Merri Garden</a></h2>
                         <ul class="list-inline-block nav-footer">
-                            <li><a href="{% url 'about' %}">About us</a></li>
-                            <li><a href="{% url 'contact' %}">Contact us </a></li>
-                            <li><a href="#">Terms of use </a></li>
-                            <li><a href="#">Privacy Policy </a></li>
-                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="{% url 'about' %}">О нас</a></li>
+                            <li><a href="{% url 'contact' %}">Контакты </a></li>
+                            <li><a href="{% url 'comand' %}">Команда </a></li>
+                            <li><a href="{% url 'member_login' %}">Забронировать </a></li>
+                            <li><a href="{% url 'gallery' %}">Галерея</a></li>
                         </ul>
                     </div>
                 </div>

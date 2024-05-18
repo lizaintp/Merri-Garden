@@ -6,64 +6,21 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="header-phone">
-                            <span class="color">Call today:</span>
-                            <strong>+1 800 555–123–2323</strong>
+                            <span class="color">Звоните сегодня:</span>
+                            <strong><br>+996555226333</strong>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="logo logo1">
                             <h1 class="hidden">topshop wordpress theme</h1>
-                            <a href="{% url 'index' %}"><img src="{% static 'images/home/logo.png' %}" alt=""></a>
+                            <a href="{% url 'index' %}"><img src="{{settings.image.url}}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="mini-cart-box pull-right">
                             <a class="mini-cart-link" href="cart.html">
-                                <span class="mini-cart-number"><span class="color">My Cart:</span><strong>2 items: $450.00</strong></span>
+                                <span class="mini-cart-number"><span class="color">Почта:</span><strong><a href="mailto:merrigarden@gmail.com"></a><br><br>merrigarden@mail.com</strong></span>
                             </a>
-                            <div class="mini-cart-content">
-                                <h2 class="mont-font title18 color">(2) ITEMS IN MY CART</h2>
-                                <div class="list-mini-cart-item">
-                                    <div class="productmini-cat table">
-                                        <div class="product-thumb">
-                                            <a href="#" class="product-thumb-link"><img alt="" src="{% static 'images/photos/topshop_product_01.jpg' %}"></a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                            <div class="product-price">
-                                                <ins><span>$400.00</span></ins>
-                                                <del><span>$520.00</span></del>
-                                            </div>
-                                            <div class="product-rate">
-                                                <div class="product-rating" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="productmini-cat table">
-                                        <div class="product-thumb">
-                                            <a href="#" class="product-thumb-link"><img alt="" src="{% static 'images/photos/topshop_product_02.jpg' %}"></a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                            <div class="product-price">
-                                                <ins><span>$400.00</span></ins>
-                                                <del><span>$520.00</span></del>
-                                            </div>
-                                            <div class="product-rate">
-                                                <div class="product-rating" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mini-cart-total mont-font  clearfix">
-                                    <strong class="pull-left">TOTAL</strong>
-                                    <span class="pull-right color">$800.00</span>
-                                </div>
-                                <div class="mini-cart-button clearfix">
-                                    <a class="mini-cart-view shop-button pull-left" href="#">View my cart </a>
-                                    <a class="mini-cart-checkout shop-button pull-right" href="#">Checkout</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,33 +33,24 @@
                             <a href="{% url 'index' %}">Главная страница </a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Vendors</a>
-                            <ul class="sub-menu">
-                                <li><a href="{% url 'vendor_shop' %}">Vendor Shop</a></li>
-                            </ul>
+                            <a href="{% url 'comand' %}">Команда</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="{% url 'grid_sidebar' %}">Grid With Sidebar</a></li>
                                 <li><a href="{% url 'cart' %}">Cart</a></li>
-                                <li><a href="{% url 'checkout' %}">Checkout</a></li>
-                                <li><a href="{% url 'member_login' %}">Login/Register</a></li>
+                                <li><a href="{% url 'gallery' %}">Галерея</a></li>
+                                <li><a href="{% url 'member_login' %}">Забронировать</a></li>
                                 <li><a href="{% url 'my_profile' %}">Profile</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Postfolio</a></li>
                         <li class="menu-item-has-children">
-                            <a href="#">Blog </a>
-                            <ul class="sub-menu">
-                                <li><a href="{% url 'blog' %}">Blog Post</a></li>
-                                <li><a href="{% url 'blog_sidebar' %}">Blog With Sidebar</a></li>
-                                <li><a href="{% url 'single' %}">Single Post</a></li>
-                            </ul>
+                            <a href="{% url 'blog' %}">Новости </a>
                         </li>
-                        <li><a href="#">Elements</a></li>
-                        <li><a href="{% url 'about' %}">About Us</a></li>
-                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'about' %}">О нас</a></li>
+                        <li><a href="{% url 'contact' %}">Контакты</a></li>
                     </ul>
                     <a href="#" class="toggle-mobile-menu"><span></span></a>
                 </nav>

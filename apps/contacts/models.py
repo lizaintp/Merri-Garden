@@ -6,10 +6,6 @@ class Contacts(models.Model):
         max_length=100,
         verbose_name='Имя'
     )
-    lastname = models.CharField(
-        max_length=100,
-        verbose_name='Фамилия'
-    )
     email = models.EmailField(
         verbose_name='Почта'
     )
@@ -17,7 +13,7 @@ class Contacts(models.Model):
         max_length=100,
         verbose_name='Тема'
     )
-    comment = models.TextField(
+    message = models.TextField(
         verbose_name='Комментарий'
     )
     def __str__(self):
@@ -26,3 +22,18 @@ class Contacts(models.Model):
     class Meta:
         verbose_name = 'Контакт'
         verbose_name_plural = 'Контакты'
+
+class Quetions(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name='Название вопроса'
+    )
+    desc = models.TextField(
+        verbose_name='Ответ на вопрос'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Вопрос'
+        verbose_name_plural = 'Вопросы'
