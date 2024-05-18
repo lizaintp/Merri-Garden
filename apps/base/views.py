@@ -9,4 +9,5 @@ def index(request):
     return render(request, 'base/index.html', locals())
 
 def about(request):
+    settings = models.Settings.objects.latest('id')
     return render(request, 'base/about.html', locals())

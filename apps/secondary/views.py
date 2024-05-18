@@ -1,7 +1,8 @@
 from django.shortcuts import render
-
+from apps.base.models import Settings
 # Create your views here.
 def blog(request):
+    settings = Settings.objects.latest('id')
     return render(request, 'blog.html', locals())
 
 def cart(request):
@@ -11,6 +12,7 @@ def cart(request):
     return render(request, 'cart.html', locals())
 
 def gallery(request):
+    settings = Settings.objects.latest('id')
     return render(request, 'gallery.html', locals())
 
 def grid_sidebar(request):
@@ -29,4 +31,5 @@ def single(request):
     return render(request, 'single.html', locals())
 
 def comand(request):
+    settings = Settings.objects.latest('id')
     return render(request, 'comand.html', locals())

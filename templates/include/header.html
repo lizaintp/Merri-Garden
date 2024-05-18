@@ -13,7 +13,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="logo logo1">
                             <h1 class="hidden">topshop wordpress theme</h1>
-                            <a href="{% url 'index' %}"><img src="" style="height: 100px; width: 100px;" alt=""></a>
+                            <a href="{% url 'index' %}"><img src="{{settings.logo.url}}" style="height: 100px; width: 100px;" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
@@ -40,12 +40,11 @@
                             <ul class="sub-menu">
                                 <li><a href="{% url 'grid_sidebar' %}">Grid With Sidebar</a></li>
                                 <li><a href="{% url 'cart' %}">Cart</a></li>
-                                <li><a href="{% url 'gallery' %}">Галерея</a></li>
                                 <li><a href="{% url 'member_login' %}">Забронировать</a></li>
                                 <li><a href="{% url 'my_profile' %}">Profile</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Postfolio</a></li>
+                        <li><a href="{% url 'gallery' %}">Галерея</a></li>
                         <li class="menu-item-has-children">
                             <a href="{% url 'blog' %}">Новости </a>
                         </li>
