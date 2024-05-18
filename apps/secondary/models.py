@@ -23,3 +23,24 @@ class Gallery(models.Model):
     class Meta:
         verbose_name = 'Галерея'
         verbose_name_plural = 'Галереи'
+
+
+class Band(models.Model):
+    photo = models.ImageField(
+        upload_to='photo/',
+        verbose_name='Фото сотрудника'
+    )
+    fullname = models.CharField(
+        max_length=255,
+        verbose_name='ФИО'
+    )
+    profession = models.CharField(
+        max_length=255,
+        verbose_name='Профессия'
+    )
+    def __str__(self):
+        return self.fullname
+    
+    class Meta:
+        verbose_name = 'Команда'
+        verbose_name_plural = 'Команды'

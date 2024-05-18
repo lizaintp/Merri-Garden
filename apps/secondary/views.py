@@ -35,6 +35,7 @@ def single(request):
     return render(request, 'single.html', locals())
 
 def comand(request):
+    band = models.Band.objects.all()
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
     return render(request, 'comand.html', locals())

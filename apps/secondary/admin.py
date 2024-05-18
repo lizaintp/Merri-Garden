@@ -7,3 +7,9 @@ class GalleryFilterAdmin(admin.ModelAdmin):
     list_display = ('title', 'date')
     search_fields = ('title', 'date')
 admin.site.register(models.Gallery, GalleryFilterAdmin)
+
+class BandFilterAdmin(admin.ModelAdmin):
+    list_filter = ('fullname', )
+    list_display = ('fullname', 'profession')
+    search_fields = ('fullname', 'profession')
+admin.site.register(models.Band, BandFilterAdmin)
