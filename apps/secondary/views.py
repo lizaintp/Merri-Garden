@@ -10,9 +10,6 @@ def blog(request):
 def cart(request):
     return render(request, 'cart.html', locals())
 
-def cart(request):
-    return render(request, 'cart.html', locals())
-
 def gallery(request):
     gallery = models.Gallery.objects.all()
     settings = Settings.objects.latest('id')
@@ -32,6 +29,8 @@ def quick_view(request):
     return render(request, 'quick-view.html', locals())
 
 def single(request):
+    settings = Settings.objects.latest('id')
+    insta = Instagram.objects.latest('id')
     return render(request, 'single.html', locals())
 
 def comand(request):
