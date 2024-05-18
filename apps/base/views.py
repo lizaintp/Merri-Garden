@@ -5,6 +5,7 @@ from apps.base import models
 def index(request):
     settings = models.Settings.objects.latest('id')
     insta = models.Instagram.objects.latest('id')
+    image = models.Images.objects.latest('id')
     return render(request, 'base/index.html', locals())
 
 def about(request):
