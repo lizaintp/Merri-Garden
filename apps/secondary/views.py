@@ -20,6 +20,8 @@ def grid_sidebar(request):
     return render(request, 'grid-sidebar.html', locals())
 
 def member_login(request):
+    settings = Settings.objects.latest('id')
+    insta = Instagram.objects.latest('id')
     return render(request, 'member-login.html', locals())
 
 def my_profile(request):
