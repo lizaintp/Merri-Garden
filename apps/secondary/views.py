@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from apps.base.models import Settings
+from apps.secondary import models
+from apps.base.models import Settings, Instagram
 # Create your views here.
 def blog(request):
+    insta = Instagram.objects.latest('id')
     settings = Settings.objects.latest('id')
     return render(request, 'blog.html', locals())
 
@@ -12,7 +14,9 @@ def cart(request):
     return render(request, 'cart.html', locals())
 
 def gallery(request):
+    gallery = models.Gallery.objects.all()
     settings = Settings.objects.latest('id')
+    insta = Instagram.objects.latest('id')
     return render(request, 'gallery.html', locals())
 
 def grid_sidebar(request):
@@ -32,4 +36,5 @@ def single(request):
 
 def comand(request):
     settings = Settings.objects.latest('id')
+    insta = Instagram.objects.latest('id')
     return render(request, 'comand.html', locals())
