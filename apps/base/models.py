@@ -134,3 +134,22 @@ class WhatDoWeOffer(models.Model):
     class Meta:
         verbose_name = 'Что мы предлагаем'
         verbose_name_plural = 'Что мы предлагаем'
+
+class Comments(models.Model):
+    logo = models.ImageField(
+        upload_to='image/',
+        verbose_name='Логотип комментатора'
+    )
+    comment = models.TextField(
+        verbose_name='Комментарий'
+    )
+    name = models.CharField(
+        max_length=100,
+        verbose_name='Имя комментатора'
+    )
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'

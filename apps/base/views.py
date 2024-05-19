@@ -14,4 +14,5 @@ def about(request):
     whychooseus = models.WhyChooseUs.objects.all()
     about = models.About.objects.latest('id')
     whatdoweoffer = models.WhatDoWeOffer.objects.all()
+    comments = models.Comments.objects.all()
     return render(request, 'base/about.html', locals())

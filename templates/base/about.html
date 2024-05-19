@@ -41,57 +41,18 @@
 					</div>
 					<!-- End Choise -->
 					<div class="about-client">
-						<h2 class="title18">What people are saying</h2>
+						<h2 class="title18">Что люди говорят</h2>
 						<div class="about-client-slider">
 							<div class="wrap-item" data-autoplay="true" data-pagination="false" data-itemscustom="[[0,1],[560,2],[990,3]]">
+								{% for comments in comments %}
 								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av1.jpg' %}" alt="" /></a></div>
+									<div class="client-thumb"><a href="#"><img src="{{comments.logo.url}}" alt="" /></a></div>
 									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Vincent Vanilla</a></h3>
-										<span class="silver">happy customer</span>
+										<p class="desc">{{comments.comments}}</p>
+										<h3 class="title14"><a href="#" class="color">{{comments.name}}</a></h3>
 									</div>
 								</div>
-								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av2.jpg' %}" alt="" /></a></div>
-									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Gregor Red</a></h3>
-										<span class="silver">loyal customer</span>
-									</div>
-								</div>
-								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av3.jpg' %}" alt="" /></a></div>
-									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Alexander Green</a></h3>
-										<span class="silver">happy customer</span>
-									</div>
-								</div>
-								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av4.jpg' %}" alt="" /></a></div>
-									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Vincent Vanilla</a></h3>
-										<span class="silver">happy customer</span>
-									</div>
-								</div>
-								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av5.jpg' %}" alt="" /></a></div>
-									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Gregor Red</a></h3>
-										<span class="silver">loyal customer</span>
-									</div>
-								</div>
-								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{% static 'images/pages/av6.jpg' %}" alt="" /></a></div>
-									<div class="client-info">
-										<p class="desc">Lorem enim et luctus hendrelibero mole stie ante, ut fringilla purus eros quisent ipsum. Aliquam bidum. Thank you!</p>
-										<h3 class="title14"><a href="#" class="color">Alexander Green</a></h3>
-										<span class="silver">happy customer</span>
-									</div>
-								</div>
+								{% endfor %}
 							</div>
 						</div>
 					</div>

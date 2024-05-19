@@ -25,3 +25,9 @@ class WhatDoWeOfferFilterAdmin(admin.ModelAdmin):
     list_display = ('title', )
     search_fields = ('title', )
 admin.site.register(models.WhatDoWeOffer, WhatDoWeOfferFilterAdmin)
+
+class CommentsFilterAdmin(admin.ModelAdmin):
+    list_filter = ('name', )
+    list_display = ('name', )
+    search_fields = ('name', )
+admin.site.register(models.Comments, CommentsFilterAdmin)
