@@ -50,16 +50,20 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box menu-footer order-footer">
-                            <h2 class="title18 mont-font color">ORDER INFO</h2>
+                            <h2 class="title18 mont-font color">Социальные сети:</h2>
                             <ul class="list-none">
-                                <li><a href="#">Mytopshop Account</a></li>
-                                <li><a href="#">Quick Reorder</a></li>
-                                <li><a href="#">Shipping Information</a></li>
-                                <li><a href="#">International Shipping</a></li>
-                                <li><a href="#">Return Policies</a></li>
-                                <li><a href="#">Track Your Order</a></li>
-                                <li><a href="#">Fax Order Form</a></li>
-                                <li><a href="#">Regimen & Wishlist</a></li>
+                                {% if settings.insta %}
+                                <li><a href="{{settings.insta}}">Instagram</a></li>
+                                {% endif %}
+                                {% if settings.facebook %}
+                                <li><a href="{{settings.facebook}}">Facebook</a></li>
+                                {% endif %}
+                                {% if settings.twitter %}
+                                <li><a href="{{settings.twitter}}">Twitter</a></li>
+                                {% endif %}
+                                {% if settings.pinterest %}
+                                <li><a href="{{settings.pinterest}}">Pinterest</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>

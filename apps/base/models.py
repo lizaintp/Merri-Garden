@@ -21,16 +21,20 @@ class Settings(models.Model):
         verbose_name='Почта'
     )
     insta = models.URLField(
-        verbose_name='Instagram'
+        verbose_name='Instagram',
+        blank=True, null=True
     )
     facebook = models.URLField(
-        verbose_name='Facebook'
+        verbose_name='Facebook',
+        blank=True, null=True
     )
     twitter = models.URLField(
-        verbose_name='Twitter'
+        verbose_name='Twitter',
+        blank=True, null=True
     )
     pinterest = models.URLField(
-        verbose_name='Pinterest'
+        verbose_name='Pinterest',
+        blank=True, null=True
     )
     locate = models.CharField(
         max_length=255,
