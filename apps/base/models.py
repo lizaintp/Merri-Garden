@@ -92,3 +92,33 @@ class Images(models.Model):
     class Meta:
         verbose_name = 'Фотография на главной странице'
         verbose_name_plural = 'Фотографии на главных страницах'
+
+class WhyChooseUs(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name='Название'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Почему выбирает нас'
+        verbose_name_plural = 'Почему выбирают нас'
+
+class WhatDoWeOffer(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name='Название'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Что мы предлагаем'
+        verbose_name_plural = 'Что мы предлагаем'

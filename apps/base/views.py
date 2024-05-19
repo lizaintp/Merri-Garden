@@ -11,4 +11,6 @@ def index(request):
 def about(request):
     settings = models.Settings.objects.latest('id')
     insta = models.Instagram.objects.latest('id')
+    whychooseus = models.WhyChooseUs.objects.all()
+    whatdoweoffer = models.WhatDoWeOffer.objects.all()
     return render(request, 'base/about.html', locals())

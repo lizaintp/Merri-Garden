@@ -19,3 +19,4 @@ class NewsFilterAdmin(admin.ModelAdmin):
     list_display = ('title', 'date')
     search_fields = ('title', 'date')
 admin.site.register(models.News, NewsFilterAdmin)
+
