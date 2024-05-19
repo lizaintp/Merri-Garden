@@ -117,8 +117,8 @@ class About(models.Model):
     )
     
     class Meta:
-        verbose_name = 'Почему выбирает нас'
-        verbose_name_plural = 'Почему выбирают нас'
+        verbose_name = 'О нас'
+        verbose_name_plural = 'О нас'
 
 class WhatDoWeOffer(models.Model):
     title = models.CharField(
