@@ -15,6 +15,7 @@ class BandFilterAdmin(admin.ModelAdmin):
     search_fields = ('fullname', 'profession')
 admin.site.register(models.Band, BandFilterAdmin)
 
+admin.site.register(models.AboutNews)
 class NewsFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )
     list_display = ('title', 'date')

@@ -12,30 +12,8 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font">Category top banner</h2>
-								<p>This is a Block and can be edited live in with the Page Builder</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item-slider">
-					<div class="banner-thumb"><a href="#"><img src="{% static 'images/shop/shop-banner2.jpg' %}" alt="" /></a></div>
-					<div class="banner-info">
-						<div class="container">
-							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font">Category top banner</h2>
-								<p>This is a Block and can be edited live in with the Page Builder</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item-slider">
-					<div class="banner-thumb"><a href="#"><img src="{% static 'images/shop/shop-banner3.jpg' %}" alt="" /></a></div>
-					<div class="banner-info">
-						<div class="container">
-							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font">Category top banner</h2>
-								<p>This is a Block and can be edited live in with the Page Builder</p>
+								<h2 class="title30 mont-font"><br>{{aboutnews.title}}</h2>
+								<p>{{aboutnews.desc}}</p>
 							</div>
 						</div>
 					</div>
@@ -85,14 +63,12 @@
 									</div>
 									<div class="post-info-hidden">
 										<p class="desc">{{news.desc}}</p>
-										<a href="{% url 'single' %}" class="btn-dashed readmore">Больше новостей <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						{% endfor %}
 					</div>
-					<div class="loadmore text-center"><a href="{% url 'single' %}" class="shop-button">Подробнее</a></div>
 				</div>
 			</div>
 		</div>
