@@ -15,6 +15,7 @@ def gallery(request):
     gallery = models.Gallery.objects.all()
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
+    aboutgallery = models.AboutGallery.objects.latest('id')
     return render(request, 'gallery.html', locals())
 
 def grid_sidebar(request):

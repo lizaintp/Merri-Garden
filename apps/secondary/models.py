@@ -1,6 +1,24 @@
 from django.db import models
 
 # Create your models here.
+class AboutGallery(models.Model):
+    title = models.CharField(
+        max_length=150,
+        verbose_name='Название страницы'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение страницы'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'О галереи'
+        verbose_name_plural = 'О галереях'
 
 class Gallery(models.Model):
     image = models.ImageField(

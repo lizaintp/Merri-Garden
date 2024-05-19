@@ -2,6 +2,7 @@ from django.contrib import admin
 from apps.secondary import models
 
 # Register your models here.
+admin.site.register(models.AboutGallery)
 class GalleryFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )
     list_display = ('title', 'date')
