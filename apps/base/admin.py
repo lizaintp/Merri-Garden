@@ -18,6 +18,8 @@ class WhyChooseUsFilterAdmin(admin.ModelAdmin):
     search_fields = ('title', )
 admin.site.register(models.WhyChooseUs, WhyChooseUsFilterAdmin)
 
+admin.site.register(models.About)
+
 class WhatDoWeOfferFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )
     list_display = ('title', )

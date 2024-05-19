@@ -108,6 +108,18 @@ class WhyChooseUs(models.Model):
         verbose_name = 'Почему выбирает нас'
         verbose_name_plural = 'Почему выбирают нас'
 
+class About(models.Model):
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    subdesc = models.TextField(
+        verbose_name='Подописание'
+    )
+    
+    class Meta:
+        verbose_name = 'Почему выбирает нас'
+        verbose_name_plural = 'Почему выбирают нас'
+
 class WhatDoWeOffer(models.Model):
     title = models.CharField(
         max_length=255,
