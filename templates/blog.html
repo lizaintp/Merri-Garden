@@ -53,151 +53,28 @@
 			<div class="container">
 				<div class="list-blog-full">
 					<div class="row">
+						{% for news in news %}
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="item-post-format item-blog-full">
 								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_06.jpg' %}" alt=""></a>
+									<a href="#" class="post-thumb-link"><img src="{{news.image.url}}" alt=""></a>
 								</div>
 								<div class="post-info">
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
+									<h3 class="title14 post-title"><a href="#">{{news.title}}</a></h3>
 									<div class="post-comment-date clearfix">
 										<div class="post-date pull-left text-center">
 											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
+											<span>{{news.date}}</span>
 										</div>
 									</div>
 									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
+										<p class="desc">{{news.desc}}</p>
 										<a href="{% url 'single' %}" class="btn-dashed readmore">Больше новостей <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
-								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_10.jpg' %}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<div class="post-format"><a href="#">slide</a><span>3</span></div>
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date pull-left text-center">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
-										</div>
-										<div class="post-comment pull-right text-center">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-											<span>04</span>
-										</div>
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-										<a href="#" class="btn-dashed readmore">Quick view <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
-								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_03.jpg' %}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<div class="post-format"><a href="#">slide</a><span>3</span></div>
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date pull-left text-center">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
-										</div>
-										<div class="post-comment pull-right text-center">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-											<span>04</span>
-										</div>
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-										<a href="#" class="btn-dashed readmore">Quick view <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
-								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_04.jpg' %}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<div class="post-format"><a href="#">slide</a><span>3</span></div>
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date pull-left text-center">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
-										</div>
-										<div class="post-comment pull-right text-center">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-											<span>04</span>
-										</div>
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-										<a href="#" class="btn-dashed readmore">Quick view <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
-								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_07.jpg' %}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<div class="post-format"><a href="#">slide</a><span>3</span></div>
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date pull-left text-center">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
-										</div>
-										<div class="post-comment pull-right text-center">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-											<span>04</span>
-										</div>
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-										<a href="#" class="btn-dashed readmore">Quick view <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
-								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{% static 'images/photos/blog/topshop_blog_02.jpg' %}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<div class="post-format"><a href="#">slide</a><span>3</span></div>
-									<h3 class="title14 post-title"><a href="#">slide post fomat</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date pull-left text-center">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<span>Fec. 08 2017</span>
-										</div>
-										<div class="post-comment pull-right text-center">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-											<span>04</span>
-										</div>
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">Praesent vestibu lum molestie lacus. Aenean nonummy endre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-										<a href="#" class="btn-dashed readmore">Quick view <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 					<div class="loadmore text-center"><a href="{% url 'single' %}" class="shop-button">Подробнее</a></div>
 				</div>

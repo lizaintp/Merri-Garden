@@ -5,6 +5,7 @@ from apps.base.models import Settings, Instagram
 def blog(request):
     insta = Instagram.objects.latest('id')
     settings = Settings.objects.latest('id')
+    news = models.News.objects.all()
     return render(request, 'blog.html', locals())
 
 def cart(request):

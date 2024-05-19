@@ -44,3 +44,25 @@ class Band(models.Model):
     class Meta:
         verbose_name = 'Команда'
         verbose_name_plural = 'Команды'
+
+class News(models.Model):
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение'
+    )
+    title = models.CharField(
+        max_length=100,
+        verbose_name='Название новости'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    date = models.DateField(
+        verbose_name='Дата'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Новость'
+        verbose_name_plural = 'Новости'
