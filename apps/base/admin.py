@@ -18,6 +18,8 @@ class WhyChooseUsFilterAdmin(admin.ModelAdmin):
     search_fields = ('title', )
 admin.site.register(models.WhyChooseUs, WhyChooseUsFilterAdmin)
 
+admin.site.register(models.WhyChooseUsImage)
+
 admin.site.register(models.About)
 
 class WhatDoWeOfferFilterAdmin(admin.ModelAdmin):
@@ -25,6 +27,8 @@ class WhatDoWeOfferFilterAdmin(admin.ModelAdmin):
     list_display = ('title', )
     search_fields = ('title', )
 admin.site.register(models.WhatDoWeOffer, WhatDoWeOfferFilterAdmin)
+
+admin.site.register(models.WhatDoWeOfferImage)
 
 class CommentsFilterAdmin(admin.ModelAdmin):
     list_filter = ('name', )

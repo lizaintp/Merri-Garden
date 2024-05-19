@@ -4,8 +4,9 @@ from apps.contacts import models
 # Register your models here.
 class ContactsFilterAdmin(admin.ModelAdmin):
     list_filter = ('name', )
-    list_display = ('name','email','subject')
-    search_fields = ('name', 'insta','email','subject')
+    list_display = ('name','email','subject', 'message')
+    search_fields = ('name','email','subject', 'message')
+    readonly_fields = ('name','email','subject', 'message')
 admin.site.register(models.Contacts, ContactsFilterAdmin)
 
 class QuetionsFilterAdmin(admin.ModelAdmin):

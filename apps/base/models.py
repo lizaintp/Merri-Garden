@@ -108,6 +108,15 @@ class WhyChooseUs(models.Model):
         verbose_name = 'Почему выбирает нас'
         verbose_name_plural = 'Почему выбирают нас'
 
+class WhyChooseUsImage(models.Model):
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение'
+    )
+    class Meta:
+        verbose_name = 'Почему выбирает нас, изображение'
+        verbose_name_plural = 'Почему выбирает нас, изображения'
+
 class About(models.Model):
     desc = models.TextField(
         verbose_name='Описание'
@@ -134,6 +143,15 @@ class WhatDoWeOffer(models.Model):
     class Meta:
         verbose_name = 'Что мы предлагаем'
         verbose_name_plural = 'Что мы предлагаем'
+
+class WhatDoWeOfferImage(models.Model):
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение'
+    )
+    class Meta:
+        verbose_name = 'Что мы предлагаем, изображение'
+        verbose_name_plural = 'Что мы предлагаем, изображения'
 
 class Comments(models.Model):
     logo = models.ImageField(
