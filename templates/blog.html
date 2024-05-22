@@ -63,14 +63,14 @@
 									</div>
 									<div class="post-info-hidden">
 										<p class="desc">{{news.desc}}</p>
-										<a href="{% url 'single' %}" class="btn-dashed readmore">Подробнее <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+										<a href="{% url 'single' news.id %}" class="btn-dashed readmore">Подробнее <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						{% endfor %}
 					</div>
-					<div class="loadmore text-center"><a href="{% url 'single' %}" class="shop-button">Больше новостей</a></div>
+					<div class="loadmore text-center"><a href="#" class="shop-button">Больше новостей</a></div>
 				</div>
 			</div>
 		</div>
