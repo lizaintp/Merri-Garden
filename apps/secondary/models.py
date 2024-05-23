@@ -18,8 +18,8 @@ class AboutGallery(models.Model):
         return self.title
     
     class Meta:
-        verbose_name = 'О галереи'
-        verbose_name_plural = 'О галереях'
+        verbose_name = 'О Галереи'
+        verbose_name_plural = 'О Галереях'
 
 class Gallery(models.Model):
     image = models.ImageField(
@@ -63,6 +63,25 @@ class Band(models.Model):
     class Meta:
         verbose_name = 'Команда'
         verbose_name_plural = 'Команды'
+
+class AboutBand(models.Model):
+    title = models.CharField(
+        max_length=150,
+        verbose_name='Название страницы'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение страницы'
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'О Команде'
+        verbose_name_plural = 'О Командах'
 
 class News(models.Model):
     image = models.ImageField(

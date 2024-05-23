@@ -138,8 +138,9 @@ class AboutAbout(models.Model):
         max_length=150,
         verbose_name='Название страницы'
     )
-    desc = models.TextField(
-        verbose_name='Описание'
+    desc = RichTextField(
+        verbose_name='Описание',
+        blank=True,null=True
     )
     image = models.ImageField(
         upload_to='image/',

@@ -17,6 +17,7 @@ def gallery(request):
     return render(request, 'gallery.html', locals())
 
 def comand(request):
+    aboutband = models.AboutBand.objects.latest('id')
     band = models.Band.objects.all()
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
