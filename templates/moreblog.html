@@ -12,7 +12,7 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>{{aboutnews.title}}</h2>
+								<h2 class="title30 mont-font"><br>Все новости</h2>
 								<p>{{aboutnews.desc}}</p>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
 										</div>
 									</div>
 									<div class="post-info-hidden">
-										<p class="desc">{{news.desc|safe|truncatewords:15}}</p>
+										<p class="desc">{{news.desc|safe}}</p>
 										<a href="{% url 'single' news.id %}" class="btn-dashed readmore">Подробнее <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
@@ -70,7 +70,6 @@
 						</div>
 						{% endfor %}
 					</div>
-					<div class="loadmore text-center"><a href="#" class="shop-button">Больше новостей</a></div>
 				</div>
 			</div>
 		</div>
@@ -79,16 +78,6 @@
 	<!-- End Content -->
 	{% include 'include/footer.html' %}
 	<!-- End Footer -->
-	<div class="wishlist-mask">
-		<div class="wishlist-popup">
-			<span class="popup-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
-			<p class="wishlist-alert">"Lucky shop Product" was added to wishlist</p>
-			<div class="wishlist-button">
-				<a href="#">Continue Shopping (<span class="wishlist-countdown">10</span>)</a>
-				<a href="#">Go To Shopping Cart</a>
-			</div>
-		</div>
-	</div>
 	<a href="#" class="scroll-top round"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </div>
 {% endblock %}

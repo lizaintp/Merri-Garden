@@ -1558,14 +1558,34 @@
 		<div class="latest-news">
 			<div class="container">
 				<div class="title-box text-uppercase text-center wow zoomIn">
-					<strong class="first-letter vibes-font">l</strong>
-					<span class="color">05</span>
-					<h2 class="title30 mont-font">Latest</h2>
-					<h2 class="title30 mont-font">News</h2>
+					<style>
+						.title-box {
+							text-align: center;
+							text-transform: uppercase;
+						}
+
+						.title-box strong {
+							font-size: 24px; /* Размер шрифта по вашему выбору */
+							font-family: 'Great Vibes', cursive; /* Указание шрифта для vibes-font */
+						}
+
+						.title-box h2 {
+							font-size: 30px; /* Размер шрифта по вашему выбору */
+							font-family: 'Montserrat Alternates', sans-serif; /* Указание шрифта для mont-font */
+						}
+
+						.title-box .first-letter {
+							font-size: 100px; /* Размер шрифта по вашему выбору */
+						}
+
+					</style>
+					<strong class="first-letter vibes-font"  style="color: rgb(228, 145, 145);">Merri Garden</strong>
+					<h2 class="title30 mont-font">Последние</h2>
+					<h2 class="title30 mont-font">Новости</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<p class="latest-news-intro wow fadeInUp">Praesent vestibu lum molestie lacus. Aenean nonummyendre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
+						<p class="latest-news-intro wow fadeInUp">{{aboutnews.desc}}</p>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="item-post-format wow fadeInUp">
@@ -1673,15 +1693,5 @@
 	{% include 'include/footer.html' %}
 	<!-- End Footer -->
 	<a href="#" class="scroll-top round"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-	<div class="wishlist-mask">
-		<div class="wishlist-popup">
-			<span class="popup-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
-			<p class="wishlist-alert">"Lucky shop Product" was added to wishlist</p>
-			<div class="wishlist-button">
-				<a href="#">Continue Shopping (<span class="wishlist-countdown">10</span>)</a>
-				<a href="#">Go To Shopping Cart</a>
-			</div>
-		</div>
-	</div>
 </div>
 {% endblock %}

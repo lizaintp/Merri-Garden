@@ -28,3 +28,10 @@ def single(request, id):
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
     return render(request, 'single.html', locals())
+
+def moreblog(request):
+    news = models.News.objects.all()
+    settings = Settings.objects.latest('id')
+    insta = Instagram.objects.latest('id')
+    aboutnews = models.AboutNews.objects.latest('id')
+    return render(request, 'moreblog.html', locals())

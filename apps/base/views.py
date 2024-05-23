@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from apps.base import models
+from apps.secondary.models import AboutNews, News
 
 # Create your views here.
 def index(request):
+    news = News.objects.all().order_by('?')[:4]
+    aboutnews = AboutNews.objects.latest('id')
     settings = models.Settings.objects.latest('id')
     insta = models.Instagram.objects.latest('id')
     image = models.Images.objects.latest('id')
