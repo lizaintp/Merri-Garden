@@ -3,11 +3,27 @@
 {% block content %}
 <div class="wrap">
 	{% include 'include/header.html' %}
+	<div id="content">
+		<div class="banner-slider banner-shop-slider bg-slider">
+			<div class="wrap-item" data-pagination="true" data-autoplay="true" data-transition="fade" data-navigation="true" data-itemscustom="[[0,1]]">
+				<div class="item-slider">
+					<div class="banner-thumb"><a href="#"><img src="{% static 'images/shop/shop-banner1.jpg' %}" alt="" /></a></div>
+					<div class="banner-info">
+						<div class="container">
+							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
+								<h2 class="title30 mont-font"><br>{{aboutcontacts.title}}</h2>
+								<p>{{aboutcontacts.desc}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- End Header -->
 	<div id="content">
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a> <span>Контакты</span>
+				<a href="{% url 'index' %}">Главная страница</a><span>Контакты</span>
 			</div>
 		</div>
 		<!-- End Bread Crumb -->

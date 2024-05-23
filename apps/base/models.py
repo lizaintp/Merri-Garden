@@ -133,6 +133,26 @@ class About(models.Model):
         verbose_name = 'О нас'
         verbose_name_plural = 'О нас'
 
+class AboutAbout(models.Model):
+    title = models.CharField(
+        max_length=150,
+        verbose_name='Название страницы'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение страницы',
+        blank=True,null=True
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'Об о нас'
+        verbose_name_plural = 'Об о нас'
+
 class WhatDoWeOffer(models.Model):
     title = models.CharField(
         max_length=255,
@@ -176,4 +196,3 @@ class Comments(models.Model):
         verbose_name = 'Комментарий'
         verbose_name_plural = 'Комментарии'
 
-# class 

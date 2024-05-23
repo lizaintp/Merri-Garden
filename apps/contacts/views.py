@@ -7,6 +7,7 @@ def contact(request):
     insta = Instagram.objects.latest('id')
     settings = Settings.objects.latest('id')
     quetions = models.Quetions.objects.all()
+    aboutcontacts = models.AboutContacts.objects.latest('id')
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')

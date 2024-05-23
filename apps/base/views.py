@@ -17,6 +17,7 @@ def about(request):
     whychooseus = models.WhyChooseUs.objects.all()
     whychooseusimage = models.WhyChooseUsImage.objects.latest('id')
     about = models.About.objects.latest('id')
+    aboutabout = models.AboutAbout.objects.latest('id')
     whatdoweoffer = models.WhatDoWeOffer.objects.all()
     whatdoweofferimage = models.WhatDoWeOfferImage.objects.latest('id')
     comments = models.Comments.objects.all()

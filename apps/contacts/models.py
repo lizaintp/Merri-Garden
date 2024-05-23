@@ -23,6 +23,26 @@ class Contacts(models.Model):
         verbose_name = 'Контакт'
         verbose_name_plural = 'Контакты'
 
+class AboutContacts(models.Model):
+    title = models.CharField(
+        max_length=150,
+        verbose_name='Название страницы'
+    )
+    desc = models.TextField(
+        verbose_name='Описание'
+    )
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение страницы',
+        blank=True,null=True
+    )
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = 'О Контакте'
+        verbose_name_plural = 'О Контактах'
+
 class Quetions(models.Model):
     title = models.CharField(
         max_length=255,

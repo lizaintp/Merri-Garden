@@ -21,6 +21,7 @@ admin.site.register(models.WhyChooseUs, WhyChooseUsFilterAdmin)
 admin.site.register(models.WhyChooseUsImage)
 
 admin.site.register(models.About)
+admin.site.register(models.AboutAbout)
 
 class WhatDoWeOfferFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )

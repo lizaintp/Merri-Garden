@@ -8,6 +8,7 @@ class ContactsFilterAdmin(admin.ModelAdmin):
     search_fields = ('name','email','subject', 'message')
     readonly_fields = ('name','email','subject', 'message')
 admin.site.register(models.Contacts, ContactsFilterAdmin)
+admin.site.register(models.AboutContacts)
 
 class QuetionsFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )
