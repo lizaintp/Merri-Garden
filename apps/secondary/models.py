@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class AboutGallery(models.Model):
@@ -72,8 +73,17 @@ class News(models.Model):
         max_length=100,
         verbose_name='Название новости'
     )
-    desc = models.TextField(
-        verbose_name='Описание'
+    desc = RichTextField(
+        verbose_name='Описание',
+        blank=True,null=True
+    )
+    desc2 = RichTextField(
+        verbose_name='Описание',
+        blank=True,null=True
+    )
+    comment = RichTextField(
+        verbose_name='Комментарии',
+        blank=True,null=True
     )
     date = models.DateField(
         verbose_name='Дата'
