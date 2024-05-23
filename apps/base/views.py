@@ -9,6 +9,7 @@ def index(request):
     settings = models.Settings.objects.latest('id')
     insta = models.Instagram.objects.latest('id')
     image = models.Images.objects.latest('id')
+    comments = models.Comments.objects.all()
     return render(request, 'base/index.html', locals())
 
 def about(request):

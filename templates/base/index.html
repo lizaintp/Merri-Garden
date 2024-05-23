@@ -88,35 +88,20 @@
 		<div class="client-say">
 			<div class="container">
 				<div class="title-box text-uppercase text-center">
-					<strong class="first-letter vibes-font">w</strong>
-					<span class="color">04</span>
-					<h2 class="title30 mont-font inline-block">What</h2>
-					<h2 class="title30 mont-font">client say</h2>
+					<h2 class="title30 mont-font inline-block">Отзывы</h2>
 				</div>
 			</div>
 			<div class="slick-slider client-slider">
 				<div class="slick center">
+					{% for coments in coments %}
 					<div class="item-client">
 						<div class="client-thumb">
-							<a href="#"><img src="{% static 'images/home/av1.png' %}" alt="" /></a>
+							<a href="#"><img src="{{coments.logo.url}}" alt="" /></a>
 						</div>
-						<p class="desc">I did some search online for a place to get my nails done, and shortly afterwards I came across Naillepo. I guess it was destiny, because since my first visit I have always left their salon fully satisfied. Moreover, they have a wide set of additional services even for the most exquisite clients. </p>
-						<h3 class="title14 client-name"><a href="#">Fanbong Pham</a></h3>
+						<p class="desc">{{coments.coment}}</p>
+						<h3 class="title14 client-name"><a href="#">{{coments.name}}</a></h3>
 					</div>
-					<div class="item-client">
-						<div class="client-thumb">
-							<a href="#"><img src="{% static 'images/home/av2.png' %}" alt="" /></a>
-						</div>
-						<p class="desc">I did some search online for a place to get my nails done, and shortly afterwards I came across Naillepo. I guess it was destiny, because since my first visit I have always left their salon fully satisfied. Moreover, they have a wide set of additional services even for the most exquisite clients. </p>
-						<h3 class="title14 client-name"><a href="#">fananh si pham</a></h3>
-					</div>
-					<div class="item-client">
-						<div class="client-thumb">
-							<a href="#"><img src="{% static 'images/home/av3.png' %}" alt="" /></a>
-						</div>
-						<p class="desc">I did some search online for a place to get my nails done, and shortly afterwards I came across Naillepo. I guess it was destiny, because since my first visit I have always left their salon fully satisfied. Moreover, they have a wide set of additional services even for the most exquisite clients. </p>
-						<h3 class="title14 client-name"><a href="#">gia han si pham</a></h3>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -143,9 +128,7 @@
 						.title-box .first-letter {
 							font-size: 100px; /* Размер шрифта по вашему выбору */
 						}
-
 					</style>
-					<strong class="first-letter vibes-font"  style="color: rgb(228, 145, 145);">Merri Garden</strong>
 					<h2 class="title30 mont-font">Последние <br> Новости</h2>
 					<h2 >{{aboutnews.desc}}</h2>
 				</div>
