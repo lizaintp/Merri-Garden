@@ -11,9 +11,8 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>{{aboutgallery.title}}</h2>
-								<p>
-									{{aboutgallery.desc}}</p>
+								<h2 class="title30 mont-font" style="color: #FF887B"><br>{{aboutgallery.title}}</h2>
+								<p>{{aboutgallery.desc}}</p>
 							</div>
 						</div>
 					</div>
@@ -24,19 +23,17 @@
 	<div id="content">
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a> <a href="{% url 'blog' %}">Новости</a> <span>Подробности</span>
+				<a href="{% url 'index' %}">Главная страница</a> <a href="{% url 'blog' %}">Новости</a><span style="color: #FF887B">{{blog_detail.title}}</span>
 			</div>
 		</div>
 		<!-- End Bread Crumb -->
 		<div class="content-pages single-content">
 			<div class="container">
 				<div class="single-intro">
-					
 					<div class="row">
-						
 						<div class="col-md-9 col-sm-8 col-xs-12">
 							<p class="single-text-intro" style='color: rgb(70, 67, 67);'>
-								<br><br><br><br><br><br>{{blog_detail.title}} 
+								{{blog_detail.title}} 
 							</p>
 						</div>
 					</div>
@@ -52,12 +49,7 @@
 						<p class="desc desc-margin">{{blog_detail.desc2|safe}}<p>
 					</div>
 				</div>
-				<p class="blockquote">
-					Lorem ipsum dolor sit amet conse ctetur adipisicing elit do eiusmod tempor. Dolor sit amet conse ctetur adipisicing elit do eiusmod tempor. Lorem ipsum dolor sit amet conse ctetur adipisicing elit do eiusmod tempor.
-				</p>
-
-				
-				
+				<h4 class="blockquote">{{blog_detail.comment|safe}}</h4>
 			</div>
 		</div>
 		<!-- End Content Pages -->

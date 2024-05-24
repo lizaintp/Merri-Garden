@@ -12,7 +12,7 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>{{aboutnews.title}}</h2>
+								<h2 class="title30 mont-font" style="color: #FF887B"><br>{{aboutnews.title}}</h2>
 								<p>{{aboutnews.desc}}</p>
 							</div>
 						</div>
@@ -23,7 +23,7 @@
 		<!-- End Banner Slider -->
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a> <span>Новости</span>
+				<a href="{% url 'index' %}">Главная страница</a> <span style="color: #FF887B">Новости</span>
 			</div>
 		</div>
 		<!-- End Bread Crumb -->
@@ -51,15 +51,27 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="item-post-format item-blog-full">
 								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{{news.image.url}}" alt=""></a>
+									<a href="{% url 'single' news.id %}" class="post-thumb-link"><img src="{{news.image.url}}" alt=""></a>
 								</div>
 								<div class="post-info">
-									<h3 class="title14 post-title"><a href="#">{{news.title}}</a></h3>
+									<h3 class="title14 post-title"><a href="{% url 'single' news.id %}">{{news.title}}</a></h3>
 									<div class="post-comment-date clearfix">
 										<div class="post-date pull-left text-center">
 											<i class="fa fa-calendar" aria-hidden="true"></i>
 											<span>{{news.date}}</span>
 										</div>
+										<style>
+											.post-date {
+												width: 100%;
+												text-align: center;
+											}
+
+											.post-date div {
+												display: inline-block;
+											}
+
+										</style>
+
 									</div>
 									<div class="post-info-hidden">
 										<p class="desc">{{news.desc|safe|truncatewords:15}}</p>

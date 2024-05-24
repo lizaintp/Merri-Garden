@@ -12,7 +12,7 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>Все новости</h2>
+								<h2 class="title30 mont-font" style="color: #FF887B"><br>Все новости</h2>
 								<p>{{aboutnews.desc}}</p>
 							</div>
 						</div>
@@ -23,7 +23,7 @@
 		<!-- End Banner Slider -->
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a> <span>Все новости</span>
+				<a href="{% url 'index' %}">Главная страница</a> <span style="color: #FF887B">Все новости</span>
 			</div>
 		</div>
 		<!-- End Bread Crumb -->
@@ -60,6 +60,18 @@
 											<i class="fa fa-calendar" aria-hidden="true"></i>
 											<span>{{news.date}}</span>
 										</div>
+										<style>
+											.post-date {
+												width: 100%;
+												text-align: center;
+											}
+
+											.post-date div {
+												display: inline-block;
+											}
+
+										</style>
+
 									</div>
 									<div class="post-info-hidden">
 										<p class="desc">{{news.desc|safe}}</p>

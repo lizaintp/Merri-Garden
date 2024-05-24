@@ -12,7 +12,7 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>{{aboutabout.title}}</h2>
+								<h2 class="title30 mont-font" style="color: #FF887B"><br>{{aboutabout.title}}</h2>
 								<p>{{aboutabout.desc}}</p>
 							</div>
 						</div>
@@ -23,7 +23,7 @@
 	<div id="content">
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a> <span>О нас</span>
+				<a href="{% url 'index' %}">Главная страница</a> <span style="color: #FF887B">О нас</span>
 			</div>
 		</div>
 		
@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="content-about">
 					<h2 class="title30 mont-font">О нас</h2>
-					<p class="desc"><br><br><br>{{about.subdesc}}</p>
+					<p class="desc"><br>{{about.subdesc}}</p>
 					<p class="blockquote">
 						{{about.desc}}
 					</p>
@@ -64,7 +64,11 @@
 							<div class="wrap-item" data-autoplay="true" data-pagination="false" data-itemscustom="[[0,1],[560,2],[990,3]]">
 								{% for comments in comments %}
 								<div class="item-about-client">
-									<div class="client-thumb"><a href="#"><img src="{{comments.logo.url}}" alt="" /></a></div>
+									<div class="client-thumb">
+											<div class="image-container">
+												<img src="{{comments.image.url}}" alt="" />
+											</div>
+									</div>
 									<div class="client-info">
 										<p class="desc">{{comments.comment}}</p>
 										<h3 class="title14">{{comments.name}}</h3>
@@ -72,6 +76,22 @@
 								</div>
 								{% endfor %} 
 							</div>
+							<style>
+								.image-container {
+								width: 70px;
+								height: 70px;
+								border-radius: 50%;
+								overflow: hidden;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+							}
+							.image-container img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+							</style>
 						</div>
 					</div>
 					<!-- End Client -->

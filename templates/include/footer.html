@@ -7,11 +7,32 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box contact-footer">
-                            <h2 class="title18 mont-font color">Контакты</h2>
-                            <p class="contact-address">- {{settings.locate}}</p>
-                            <p class="contact-mobile">- {{settings.phone}}</p>
-                            <p class="contact-email"> <a href="mailto:merrigarden@gmail.com">- merrigarden.com</a></p>
+                            <div class="contact-box contact-address-box">
+                                <span class="color"><i class="fa fa-institution small-icon"></i></span>
+                                <label class="title16 color">Адрес:</label>
+                                <p class="desc">{{settings.locate}}</p>
+                            </div>
+                            <div class="contact-box">
+                                <span class="color"><i class="fa fa-phone small-icon"></i></span>
+                                <ul class="list-inline-block">
+                                    <label class="title16 color">Телефон:</label>
+                                    <span>{{settings.phone}}</span>
+                                </ul>
+                            </div>
+                            <div class="contact-box">
+                                <span class="color"><i class="fa fa-envelope-open small-icon"></i></span>
+                                <ul class="list-inline-block">
+                                    <label class="title16 color">Почта:</label>
+                                    <span>{{settings.email}}</span>
+                                </ul>
+                            </div>
                         </div>
+                        <style>
+                            .small-icon {
+                                font-size: 14px; /* Adjust the size as needed */
+                            }
+
+                        </style>                        
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box menu-footer">

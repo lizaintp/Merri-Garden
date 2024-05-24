@@ -11,7 +11,7 @@
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center animated" data-animated="zoomIn">
-								<h2 class="title30 mont-font"><br>{{aboutcontacts.title}}</h2>
+								<h2 class="title30 mont-font" style="color: #FF887B"><br>{{aboutcontacts.title}}</h2>
 								<p>{{aboutcontacts.desc}}</p>
 							</div>
 						</div>
@@ -23,16 +23,13 @@
 	<div id="content">
 		<div class="bread-crumb">
 			<div class="container">
-				<a href="{% url 'index' %}">Главная страница</a><span>Контакты</span>
+				<a href="{% url 'index' %}">Главная страница</a><span style="color: #FF887B">Контакты</span>
 			</div>
 		</div>
 		<!-- End Bread Crumb -->
 		<div class="content-pages">
 			<div class="container">
 				<div class="content-contact-page">
-					<h2 class="title30 mont-font">Наши Контакты</h2>
-					<div class="contact-google-map bg-white border">
-					</div>
 					<!-- End Google Map -->
 					<div class="contact-page-info blockquote">
 						<div class="row">
@@ -55,10 +52,12 @@
 							<div class="col-md-3 col-sm-5 col-xs-12">
 								<div class="contact-box">
 									<span class="color"><i class="fa fa-envelope-open"></i></span>
-									<label class="title16 color">Почта:</label>
-									<p class="desc"><a href="#">{{settings.email}}</a></p>
+									<ul class="list-inline-block">
+										<label class="title16 color">Почта:</label>
+										<span>{{settings.email}}</span>
+									</ul>
 								</div>
-							</div>
+							</div> 	
 						</div>
 					</div>
 					<!-- End Contact Info -->
@@ -66,7 +65,7 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="contact-form">
-									<h2 class="title18">Контактная форма</h2>
+									<h2 class="title18">Оставить бронь</h2>
 									<form method="POST">
 										{% csrf_token %}
 										<input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" value="Ваше имя *" name="name" type="text">
