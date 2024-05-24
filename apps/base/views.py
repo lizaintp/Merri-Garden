@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from apps.base import models
-from apps.secondary.models import AboutNews, News
+from apps.secondary.models import AboutNews, News, Gallery
 
 # Create your views here.
 def index(request):
@@ -10,6 +10,7 @@ def index(request):
     insta = models.Instagram.objects.latest('id')
     image = models.Images.objects.latest('id')
     comments = models.Comments.objects.all()
+    gallery = Gallery.objects.all().order_by('?')[:3]
     return render(request, 'base/index.html', locals())
 
 def about(request):

@@ -36,7 +36,7 @@
 						<style>
 							.post-thumb {
 								width: 100%;
-								height: 500px;
+								height: 400px;
 								overflow: hidden;
 								position: relative;
 							}
@@ -47,38 +47,16 @@
 								position: absolute;
 								top: 0;
 								left: 0;
+								border-radius: 20px; 
+							}
+							.test{
+								margin-bottom: 20px !important;
 							}
 						</style>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-post-format item-blog-full">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="item-post-format item-blog-full test">
 								<div class="post-thumb">
-									<a href="#" class="post-thumb-link"><img src="{{gallery.image.url}}" alt=""></a>
-								</div>
-								<div class="post-info">
-									<h3 class="title14 post-title"><a href="#">{{gallery.title}}</a></h3>
-									<div class="post-comment-date clearfix">
-										<div class="post-date text-center">
-											<div style="display: inline-block;">
-												<i class="fa fa-calendar" aria-hidden="true"></i>
-												<span>{{gallery.date}}</span>
-											</div>
-										</div>
-										<style>
-											.post-date {
-												width: 100%;
-												text-align: center;
-											}
-
-											.post-date div {
-												display: inline-block;
-											}
-
-										</style>
-
-									</div>
-									<div class="post-info-hidden">
-										<p class="desc">{{gallery.desc}}</p>
-									</div>
+									<a  class="post-thumb-link"><img src="{{gallery.image.url}}" alt=""></a>
 								</div>
 							</div>
 						</div>

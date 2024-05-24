@@ -29,57 +29,45 @@
 		
 		<!-- End Popular Category -->
 		<div class="view-collection">
-			<div class="container">
-				<div class="title-box text-uppercase text-center wow zoomIn">
-					<strong class="first-letter vibes-font">v</strong>
-					<span class="color">02</span>
-					<h2 class="title30 mont-font inline-block">view</h2>
-					<h2 class="title30 mont-font">Collection</h2>
-				</div>
-				<div class="list-collection">
-					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="item-collection text-center wow fadeInLeft">
-								<div class="banner-adv zoom-rotate overlay-image">
-									<a href="#" class="adv-thumb-link"><img src="{% static 'images/photos/collection/collection_01.jpg' %}" alt=""></a>
-								</div>
-								<h3 class="mont-font title18 underline-title"><a href="#">Devices</a></h3>
-								<h2 class="vibes-font">Lorem ipsum dolor sit amet</h2>
-								<a href="#" class="shop-button">Shop Now</a>
-							</div>
-							<div class="item-collection text-center wow fadeInLeft">
-								<div class="banner-adv zoom-rotate overlay-image">
-									<a href="#" class="adv-thumb-link"><img src="{% static 'images/photos/collection/collection_03.jpg' %}" alt=""></a>
-								</div>
-								<h3 class="mont-font title18 underline-title"><a href="#">skincare night</a></h3>
-								<h2 class="vibes-font">Lorem ipsum dolor sit amet</h2>
-								<a href="#" class="shop-button">Shop Now</a>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="intro-collection wow fadeInRight">
-								<p>Praesent vestibu lum molestie lacus. Aenean nonummyendre rit mauris. Fusce suscipit varius lorem ipsum dolor sit amet consec tetuer adipi scing elit.</p>
-								<div class="text-center">
-									<a href="#" class="viewall-button">View all Products <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-								</div>
-							</div>
-							<div class="item-collection text-center wow fadeInRight">
-								<div class="banner-adv zoom-rotate overlay-image">
-									<a href="#" class="adv-thumb-link"><img src="{% static 'images/photos/collection/collection_02.jpg' %}" alt=""></a>
-								</div>
-								<h3 class="mont-font title18 underline-title"><a href="#">Flower cute</a></h3>
-								<h2 class="vibes-font">Lorem ipsum dolor sit amet</h2>
-								<a href="#" class="shop-button">Shop Now</a>
-							</div>
-							<div class="banner-collection banner-adv zoom-image fade-out-in  wow fadeInRight">
-								<a href="#" class="adv-thumb-link"><img src="{% static 'images/photos/collection/banner.jpg' %}" alt=""></a>
-								<div class="banner-info mont-font text-center">
-									<h3 class="title30 color">view all of</h3>
-									<h2 class="title60 white">top shop</h2>
+			<div class="content-pages blog-full">
+				<div class="container">
+					<div class="title-box text-uppercase text-center">
+						<h2 class="title30 mont-font inline-block" style="color: #FF887B ;">Галерея</h2>
+					</div>
+					<div class="list-blog-full">
+						<div class="row">
+							{% for gallery in gallery %}
+							<style>
+								.post-thumb {
+									width: 100%;
+									height: 400px;
+									overflow: hidden;
+									position: relative;
+								}
+								.post-thumb img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									position: absolute;
+									top: 0;
+									left: 0;
+									border-radius: 20px; 
+								}
+								.test{
+									margin-bottom: 20px !important;
+								}
+							</style>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="item-post-format item-blog-full test">
+									<div class="post-thumb">
+										<a  class="post-thumb-link"><img src="{{gallery.image.url}}" alt=""></a>
+									</div>
 								</div>
 							</div>
+							{% endfor %}
 						</div>
 					</div>
+					<div class="loadmore text-center"><a href="{% url 'gallery' %}" class="shop-button">Смотреть больше</a></div>
 				</div>
 			</div>
 		</div>
@@ -88,7 +76,7 @@
 		<div class="client-say">
 			<div class="container">
 				<div class="title-box text-uppercase text-center">
-					<h2 class="title30 mont-font inline-block">Отзывы</h2>
+					<h2 class="title30 mont-font inline-block" style="color: #FF887B">Отзывы</h2>
 				</div>
 			</div>
 			<div class="slick-slider client-slider">
@@ -129,8 +117,8 @@
 							font-size: 100px; /* Размер шрифта по вашему выбору */
 						}
 					</style>
-					<h2 class="title30 mont-font">Последние <br> Новости</h2>
-					<h2 >{{aboutnews.desc}}</h2>
+					<h2 class="title30 mont-font" style="color: #FF887B">Последние <br> Новости</h2>
+					<h5>{{aboutnews.desc}}</h5>
 				</div>
 				<div class="content-pages blog-full">
 					<div class="container">
