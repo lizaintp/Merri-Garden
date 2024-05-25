@@ -5,20 +5,22 @@
 	{% include 'include/header.html' %}
 	<!-- End Header -->
 	<style>
-		.main-nav  a {
+		.main-nav a {
 			color: #fff;
 		}
 	</style>
 	<div id="content">
 		<div class="banner-slider banner-slider1 bg-slider">
-			<div class="wrap-item" data-pagination="true" data-autoplay="true" data-transition="fade" data-navigation="false" data-itemscustom="[[0,1]]">
+			<div class="wrap-item" data-pagination="true" data-autoplay="true" data-transition="fade"
+				data-navigation="false" data-itemscustom="[[0,1]]">
 				<div class="item-slider">
 					<div class="banner-thumb"><a href="#"><br><br><img src="{{settings.image.url}}" alt="" /></a></div>
 					<div class="banner-info">
 						<div class="container">
 							<div class="banner-content-text white text-center">
 								<h2 class="banner-title vibes-font animated" data-animated="flash">Merri Garden</h2>
-								<a href="{% url 'contact' %}" class="banner-button bg-color animated" data-animated="bounceIn"><span>Забронировать</span></a>
+								<a href="{% url 'contact' %}" class="banner-button bg-color animated"
+									data-animated="bounceIn"><span>Забронировать</span></a>
 							</div>
 						</div>
 					</div>
@@ -26,7 +28,7 @@
 			</div>
 		</div>
 		<!-- End Banner Slider -->
-		
+
 		<!-- End Popular Category -->
 		<div class="view-collection">
 			<div class="content-pages blog-full">
@@ -44,6 +46,7 @@
 									overflow: hidden;
 									position: relative;
 								}
+
 								.post-thumb img {
 									width: 100%;
 									height: 100%;
@@ -51,23 +54,25 @@
 									position: absolute;
 									top: 0;
 									left: 0;
-									border-radius: 20px; 
+									border-radius: 20px;
 								}
-								.test{
+
+								.test {
 									margin-bottom: 20px !important;
 								}
 							</style>
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="item-post-format item-blog-full test">
 									<div class="post-thumb">
-										<a  class="post-thumb-link"><img src="{{gallery.image.url}}" alt=""></a>
+										<a class="post-thumb-link"><img src="{{gallery.image.url}}" alt=""></a>
 									</div>
 								</div>
 							</div>
 							{% endfor %}
 						</div>
 					</div>
-					<div class="loadmore text-center"><a href="{% url 'gallery' %}" class="shop-button">Смотреть больше</a></div>
+					<div class="loadmore text-center"><a href="{% url 'gallery' %}" class="shop-button">Смотреть
+							больше</a></div>
 				</div>
 			</div>
 		</div>
@@ -104,17 +109,22 @@
 						}
 
 						.title-box strong {
-							font-size: 24px; /* Размер шрифта по вашему выбору */
-							font-family: 'Great Vibes', cursive; /* Указание шрифта для vibes-font */
+							font-size: 24px;
+							/* Размер шрифта по вашему выбору */
+							font-family: 'Great Vibes', cursive;
+							/* Указание шрифта для vibes-font */
 						}
 
 						.title-box h2 {
-							font-size: 30px; /* Размер шрифта по вашему выбору */
-							font-family: 'Montserrat Alternates', sans-serif; /* Указание шрифта для mont-font */
+							font-size: 30px;
+							/* Размер шрифта по вашему выбору */
+							font-family: 'Montserrat Alternates', sans-serif;
+							/* Указание шрифта для mont-font */
 						}
 
 						.title-box .first-letter {
-							font-size: 100px; /* Размер шрифта по вашему выбору */
+							font-size: 100px;
+							/* Размер шрифта по вашему выбору */
 						}
 					</style>
 					<h2 class="title30 mont-font" style="color: #FF887B">Последние <br> Новости</h2>
@@ -132,6 +142,7 @@
 										overflow: hidden;
 										position: relative;
 									}
+
 									.post-thumb img {
 										width: 100%;
 										height: 100%;
@@ -144,10 +155,12 @@
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="item-post-format item-blog-full">
 										<div class="post-thumb">
-											<a href="{% url 'single' news.id %}" class="post-thumb-link"><img src="{{news.image.url}}" alt=""></a>
+											<a href="{% url 'single' news.id %}" class="post-thumb-link"><img
+													src="{{news.image.url}}" alt=""></a>
 										</div>
 										<div class="post-info">
-											<h3 class="title14 post-title"><a href="{% url 'single' news.id %}">{{news.title}}</a></h3>
+											<h3 class="title14 post-title"><a
+													href="{% url 'single' news.id %}">{{news.title}}</a></h3>
 											<div class="post-comment-date clearfix">
 												<div class="post-date pull-left text-center">
 													<i class="fa fa-calendar" aria-hidden="true"></i>
@@ -158,16 +171,17 @@
 														width: 100%;
 														text-align: center;
 													}
-		
+
 													.post-date div {
 														display: inline-block;
 													}
-		
 												</style>
 											</div>
 											<div class="post-info-hidden">
 												<p class="desc">{{news.desc|safe|truncatewords:15}}</p>
-												<a href="{% url 'single' news.id %}" class="btn-dashed readmore">Подробнее <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+												<a href="{% url 'single' news.id %}"
+													class="btn-dashed readmore">Подробнее <i
+														class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 									</div>
@@ -180,7 +194,7 @@
 			</div>
 		</div>
 		<!-- End Latest News -->
-		
+
 		<!-- End Our Services -->
 	</div>
 	<!-- End Content -->
