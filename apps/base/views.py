@@ -8,7 +8,6 @@ def index(request):
     aboutnews = AboutNews.objects.latest('id')
     settings = models.Settings.objects.latest('id')
     insta = models.Instagram.objects.latest('id')
-    image = models.Images.objects.latest('id')
     comments = models.Comments.objects.all()
     gallery = Gallery.objects.all().order_by('?')[:3]
     return render(request, 'base/index.html', locals())

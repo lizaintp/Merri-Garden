@@ -9,9 +9,6 @@ class SettingsFilterAdmin(admin.ModelAdmin):
 admin.site.register(models.Settings, SettingsFilterAdmin)
 
 admin.site.register(models.Instagram)
-
-admin.site.register(models.Images)
-
 class WhyChooseUsFilterAdmin(admin.ModelAdmin):
     list_filter = ('title', )
     list_display = ('title', )

@@ -40,6 +40,10 @@ class Settings(models.Model):
         max_length=255,
         verbose_name='Локация'
     )
+    image = models.ImageField(
+        upload_to='image/',
+        verbose_name='Изображение'
+    )
     def __str__(self):
         return self.title
     class Meta:
@@ -87,15 +91,6 @@ class Instagram(models.Model):
     class Meta:
         verbose_name = 'Фотография с инстаграмма'
         verbose_name_plural = 'Фотографии с инстаграмма'
-
-class Images(models.Model):
-    image = models.ImageField(
-        upload_to='image/',
-        verbose_name='Изображение'
-    )
-    class Meta:
-        verbose_name = 'Фотография на главной странице'
-        verbose_name_plural = 'Фотографии на главных страницах'
 
 class WhyChooseUs(models.Model):
     title = models.CharField(
