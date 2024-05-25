@@ -7,6 +7,7 @@ def blog(request):
     settings = Settings.objects.latest('id')
     news = models.News.objects.all().order_by('?')[:4]
     aboutnews = models.AboutNews.objects.latest('id')
+    aboutgallery = models.AboutGallery.objects.latest('id')
     return render(request, 'blog.html', locals())
 
 def gallery(request):
@@ -21,6 +22,7 @@ def comand(request):
     band = models.Band.objects.all()
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
+    aboutgallery = models.AboutGallery.objects.latest('id')
     return render(request, 'comand.html', locals())
 
 def single(request, id):
@@ -29,6 +31,7 @@ def single(request, id):
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
     aboutnews = models.AboutNews.objects.latest('id')
+    aboutgallery = models.AboutGallery.objects.latest('id')
     return render(request, 'single.html', locals())
 
 def moreblog(request):
@@ -36,4 +39,5 @@ def moreblog(request):
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
     aboutnews = models.AboutNews.objects.latest('id')
+    aboutgallery = models.AboutGallery.objects.latest('id')
     return render(request, 'moreblog.html', locals())

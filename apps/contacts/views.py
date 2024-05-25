@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from apps.base.models import Instagram, Settings
+from apps.secondary.models import AboutGallery
 from apps.contacts import models
 
 # Create your views here.
 def contact(request):
+    aboutgallery = AboutGallery.objects.latest('id')
     insta = Instagram.objects.latest('id')
     settings = Settings.objects.latest('id')
     quetions = models.Quetions.objects.all()

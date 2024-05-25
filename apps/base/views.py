@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from apps.base import models
-from apps.secondary.models import AboutNews, News, Gallery
+from apps.secondary.models import AboutNews, News, Gallery, AboutGallery
 
 # Create your views here.
 def index(request):
@@ -23,4 +23,5 @@ def about(request):
     whatdoweoffer = models.WhatDoWeOffer.objects.all()
     whatdoweofferimage = models.WhatDoWeOfferImage.objects.latest('id')
     comments = models.Comments.objects.all()
+    aboutgallery = AboutGallery.objects.latest('id')
     return render(request, 'base/about.html', locals())
