@@ -28,6 +28,7 @@ def single(request, id):
     blog_detail = models.News.objects.get(id=id)
     settings = Settings.objects.latest('id')
     insta = Instagram.objects.latest('id')
+    aboutnews = models.AboutNews.objects.latest('id')
     return render(request, 'single.html', locals())
 
 def moreblog(request):
